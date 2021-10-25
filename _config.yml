@@ -29,9 +29,6 @@ collections:
     icon: /icons/blogger.svg
     iconAlt: a capitla B
 
-plugins:
-  - jekyll-seo-tag
-
 collections_dir: my_collections
 color-scheme: auto-deafualt-dark
 accent-color: 26a69a #hex color value
