@@ -1,0 +1,29 @@
+<!-- sidebar trigger -->
+<a data-target="nav-mobile" class="sidenav-trigger btn-floating btn-large waves-effect waves-light hide-on-large-only"><i class="material-icons">menu</i></a>
+
+<!-- sidebar -->
+<ul id="nav-mobile" class="sidenav sidenav-fixed">
+    <!-- about me -->
+    <h3>
+      <img alt="A Bunch Of Code" loading="lazy" class="profile-picture" src="https://godalming123.github.io/profile-pic/266.webp" />
+      Me!
+    </h3>
+    <p>A web devoloper designer and coder</p>
+    <!-- pages -->
+    <h4>Pages</h4>
+    <li><a href="/#hello" class="waves-effect closeSidenavs"><i class="material-icons"> home </i> home </a></li>
+    {% for collection in site.collections %}
+      <li>
+        <a href="/#{{ collection.label}}" class="waves-effect closeSidenavs">
+          <img src="{{ collection.icon }}" alt="{{ collection.iconAlt }}" class="invert-on-dark">
+          {{ collection.name }}
+        </a>
+      </li>
+    {% endfor %}
+    <!-- contact -->
+    <h4>Contact</h4>
+    <li><a target="_blank" href="mailto: r2hk9ahnf@relay.firefox.com" class="waves-effect closeSidenavs"><i class="material-icons"> email  </i> email  </a></li>
+    <!-- acounts -->
+    <h4>Acounts</h4>
+    <li><a target="_blank" href="https://github.com/godalming123" class="waves-effect closeSidenavs"><i class="material-icons"> github </i> github </a></li>
+  </ul>
