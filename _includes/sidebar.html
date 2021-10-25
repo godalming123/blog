@@ -11,10 +11,10 @@
     <p>A web devoloper designer and coder</p>
     <!-- pages -->
     <h4>Pages</h4>
-    <li><a href="/#hello" class="waves-effect closeSidenavs"><i class="material-icons"> home </i> home </a></li>
+    <li><a href="/blog/#hello" class="waves-effect closeSidenavs"><i class="material-icons"> home </i> home </a></li>
     {% for collection in site.collections %}
       <li>
-        <a href="/#{{ collection.label}}" class="waves-effect closeSidenavs">
+        <a href="/blog/#{{ collection.label}}" class="waves-effect closeSidenavs">
           <img src="{{ collection.icon }}" alt="{{ collection.iconAlt }}" class="invert-on-dark">
           {{ collection.name }}
         </a>
