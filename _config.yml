@@ -1,1 +1,38 @@
 remote_theme: "godalming123/matirlize-jekyll-theme"
+
+collections:
+  potentially_coming_soon:
+    sort_by: date
+    name: Potentially Coming Soon
+    description: The latest things that could be in the pipeline
+    #icon: /icons/suitcase.svg
+    #iconAlt: a suitcase
+  working_on:
+    output: true
+    sort_by: date
+    name: What I'm Working On
+    description: The latest things I'm working on
+    icon: /icons/suitcase.svg
+    iconAlt: a suitcase
+  tuturiols:
+    output: true
+    sort_by: date
+    name: My Tuturiols
+    description: Browse all of my tuturiols
+    #icon: /icons/tuturiol.svg
+    #iconAlt: a tuturiol
+  blogs:
+    output: true
+    sort_by: date
+    name: My Blogs
+    description: The latest happening's
+    icon: /icons/blogger.svg
+    iconAlt: a capitla B
+
+plugins:
+  - jekyll-seo-tag
+
+collections_dir: my_collections
+color-scheme: auto-deafualt-dark
+accent-color: 26a69a #hex color value
+faded-accent-color: 1d8c81 #hex color value this is used for background when app is launching
