@@ -2,6 +2,7 @@ remote_theme: "godalming123/matirlize-jekyll-theme"
 
 collections:
   potentially_coming_soon:
+    output: false
     sort_by: date
     name: Potentially Coming Soon
     description: The latest things that could be in the pipeline
@@ -27,7 +28,7 @@ collections:
     name: My Blogs
     description: The latest happening's
     icon: /icons/blogger.svg
-    iconAlt: a capitla B
+    iconAlt: a capital B
 
 collections_dir: my_collections
 color-scheme: auto-deafualt-dark
