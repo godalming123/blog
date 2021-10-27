@@ -38,7 +38,7 @@ rmdir yay-git/
 ```yay -S github-desktop-bin```
 #### Configuration
 1. press ctrl + , on your keyboard
-### 6. temas
+### 6. teams
 ```yay -S teams```
 ### 7. discord
 ```yay -S discord-development```
