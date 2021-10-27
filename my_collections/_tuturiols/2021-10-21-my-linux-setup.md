@@ -28,16 +28,25 @@ cd ../
 rmdir yay-git/
 ```
 ### 2. vscodium
-```yay -S vscodium-bin```
+```
+yay -S vscodium-bin
+```
 ### 3. btop++
-```yay -S btop```
+```
+yay -S btop
+```
 ### 4. firefox
-```pacman -S firefox```
+```
+pacman -S firefox
+```
 ### 5. github-desktop
 #### Installation
-```yay -S github-desktop-bin```
+```
+yay -S github-desktop-bin
+```
 #### Configuration
 1. press ctrl + , on your keyboard
+
 ### 6. teams
 ```yay -S teams```
 ### 7. discord
