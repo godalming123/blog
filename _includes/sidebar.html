@@ -5,13 +5,11 @@
 <ul id="nav-mobile" class="sidenav sidenav-fixed">
     <!-- about me -->
     <h3>
-      <img alt="A Bunch Of Code" loading="lazy" class="profile-picture" src="https://godalming123.github.io/profile-pic/266.webp" />
-      Me!
+      <img alt="A capital B" loading="lazy" class="profile-picture" src="{{ '/icons/blogger.svg' | relative_url }}" />
+      My Blog
     </h3>
-    <p>A web devoloper designer and coder</p>
+    <p>A website for me to post my tuturiols experiences and what I'm working on.</p>
     <!-- pages -->
-    <h4>Pages</h4>
-    <li><a href="/blog/#hello" class="waves-effect closeSidenavs"><i class="material-icons"> home </i> home </a></li>
     {% for collection in site.collections %}
       <li>
         <a href="/blog/#{{ collection.label}}" class="waves-effect closeSidenavs">
@@ -21,9 +19,7 @@
       </li>
     {% endfor %}
     <!-- contact -->
-    <h4>Contact</h4>
-    <li><a target="_blank" href="mailto: r2hk9ahnf@relay.firefox.com" class="waves-effect closeSidenavs"><i class="material-icons"> email  </i> email  </a></li>
-    <!-- acounts -->
-    <h4>Acounts</h4>
-    <li><a target="_blank" href="https://github.com/godalming123" class="waves-effect closeSidenavs"><i class="material-icons"> github </i> github </a></li>
+    <h4>Info</h4>
+    <p>For more info on me and all my projects see</p>
+    <li><a target="_blank" href="https://godalming123.github.io/new-site" class="waves-effect closeSidenavs"><i class="material-icons"> info  </i> info  </a></li>
   </ul>
