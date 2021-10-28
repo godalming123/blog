@@ -53,15 +53,21 @@ yay -S github-desktop-bin
 1. press ctrl + , on your keyboard
 
 ### 6. teams
-```yay -S teams```
+```
+yay -S teams
+```
 ### 7. discord
-```yay -S discord-development```
+```
+yay -S discord-development
+```
 
 ## 2. Wm
 I use bspwm + sxhkd + polybar + picom + rofi for my gui setup.
 ### Installation
 Just run
-```pacman -S xorg bspwm sxhkd polybar picom rofi```
+```
+pacman -S xorg bspwm sxhkd polybar picom rofi
+```
 ### Configuration
 #### 1. bspwm
 ##### Config
@@ -302,3 +308,42 @@ rounded-corners-exclude = [
 round-borders = 1;
 detect-rounded-corners = true;
 ```
+Next we need to configure polybar I use a fixed top bar and the matirial icons font.
+Warning: I have not tested these instructions so they may not work.
+To download this go to [there website](https://zavoloklom.github.io/material-design-iconic-font/) download the zip unzip the fonts directory and move and from that directory in the terminal run:
+```
+sudo mv Material-Design-Iconic-Font.ttf /user/share/fonts/truetype/Material-Design-Iconic-Font.ttf
+```
+Now that we've installed the necersarry fonts for my polybar config lets set it up.
+First we need a launch file:
+```
+~/.config/polybar/launch.sh
+```
+```
+#!/usr/bin/env bash
+
+# Terminate already running bar instances
+killall -q polybar
+# If all your bars have ipc enabled, you can also use 
+# polybar-msg cmd quit
+
+# Launch main bar
+echo "---" | tee -a /tmp/polybar1.log /tmp/polybar2.log
+#polybar black >>/tmp/polybar1.log 2>&1 & disown
+polybar main -r >>/tmp/polybar1.log 2>&1 & disown
+echo "Bars launched..."
+```
+After configurig polybar we finnally need to configure rofi:
+```
+~/.config/rofi/config.rasi
+```
+```
+configuration {
+ modi: "window,drun,ssh,combi,run";
+ theme: "solarized";
+ combi-modi: "window,drun,ssh";
+ show-icons: true;
+ terminal: "termite";
+}
+```
+And your done!
