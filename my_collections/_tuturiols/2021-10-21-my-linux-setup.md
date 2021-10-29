@@ -11,11 +11,11 @@ barba-page-namespace: post
 ## Screenshots
 These are some screenshots of my setup:
 
-## 1. Distro
+## Distro
 Currently I use Endevour but I plan to install arch next time I install a distro I just tried endeavour to try arch witout the installation hastle. And I loved it ❤️️! I could find any packadge I wanted with yay and pacman, it was fluid and performant, it was customizable and vanialla and the list goes on. ...and on ...and on ...FOREVER.
 
-## 2. Software
-### 1. Yay
+## Software
+### Yay
 I use yay as an aur helper and its what makes arch great anyway just run:
 ```
 git clone https://aur.archlinux.org/yay-git.git
@@ -27,24 +27,24 @@ Finally we must remove the yay-git directory
 cd ../
 rmdir yay-git/
 ```
-### 2. vscodium
+### Vscodium
 ```
 yay -S vscodium-bin
 ```
-### 3. btop++
+### Btop++
 ```
 yay -S btop
 ```
-### 4. jekyll + ruby
+### Jekyll + ruby
 ```
 yay -S jekyll
 ```
 
-### 4. firefox
+### Firefox
 ```
 pacman -S firefox
 ```
-### 5. github-desktop
+### Github-desktop
 #### Installation
 ```
 yay -S github-desktop-bin
@@ -52,16 +52,16 @@ yay -S github-desktop-bin
 #### Configuration
 1. press ctrl + , on your keyboard
 
-### 6. teams
+### teams
 ```
 yay -S teams
 ```
-### 7. discord
+### discord
 ```
 yay -S discord-development
 ```
 
-## 2. Wm
+## Wm
 I use bspwm + sxhkd + polybar + picom + rofi for my gui setup.
 ### Installation
 Just run
@@ -69,8 +69,7 @@ Just run
 pacman -S xorg bspwm sxhkd polybar picom rofi
 ```
 ### Configuration
-#### 1. bspwm
-##### Config
+#### Bspwm
 My bspwm config is:
 ```
 ~/.config/bspwm/baspwmrc
@@ -108,7 +107,7 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 ```
-For this file to work we need to add `~/.screenlayout/workstation.sh` what this file does is sets up my laptop so the external moniter I have plugged in is set as a primary moniter and her is the file contents:
+For this file to work we need to add `~/.screenlayout/workstation.sh` what this file does is sets up my laptop so the external moniter I have plugged in is set as a primary moniter and here is the file contents:
 ```
 ~/.screenlayout/workstation.sh
 ```
@@ -116,18 +115,12 @@ For this file to work we need to add `~/.screenlayout/workstation.sh` what this 
 #!/bin/sh
 xrandr --output eDP-1 --mode 1366x768 --pos 0x0 --rotate normal --output HDMI-1 --primary --mode 1920x1080 --pos 1366x0 --rotate normal
 ```
-Next we need to setup our sxhkd config I generally do not like have hotkeys directly linking to app like `super` + `w` = `browser` instead I prefer to use rofi to do that the only binding I have to an app is `super` + `enter` = `terminal` which is just because the number of times I'm following a guide and have to open the terminal is crazy. I also believe that keys should be bound to somethink that is easily accessible. EG: `super` + `l` for left, `r` for right, `u` for up and `d` for down is not accesble as you have to do hand gymnastics to change window focus even if those keybindings are easy to learn becuase the letter stands for something. Instead I believe in keybindings being quik all my keybinds are center around `super` + `wasd` this is my keybinding for changing window focus and `super` + `shift` + `wasd` would move windows and `super` + `q` would kill and `super` + `e` would open rofi with all my keybindings being easily accesuble form one hand whil the other can be using the mouse or typing. Anyways this is my config:
+#### Sxhkd
+Next we need to setup our sxhkd config I generally do not like have hotkeys directly linking to an app like `super` + `w` = `browser` instead I prefer to use rofi to do that the only binding I have to an app is `super` + `enter` = `terminal` - just because the number of times I'm following a guide and have to open the terminal is crazy. I also believe that keys should be bound to somethink that is easily useable. EG: `super` + `l` for left, `r` for right, `u` for up and `d` for down may be intuitive but hard to use as you have to do hand gymnastics to change window focus even if those keybindings are easy to learn. Instead I believe in keybindings being quik all my keybinds are centered around `super` + `wasd` this is my keybinding for changing window focus and `super` + `shift` + `wasd` would move windows and `super` + `q` would kill and `super` + `e` would open rofi and so on. This allows me to easily navigate my window manager from one hand while the other can be using the mouse or typing. Anyways this is my config:
 ```
 ~/.config/sxhkd/sxhkdrc
 ```
 ```
-#
-# To learn more about how to configure Polybar
-# go to https://github.com/polybar/polybar
-#
-# The README contains a lot of information
-#
-
 #1. Wm independent hotkeys
 	#1. terminal
 	#2. launcher
@@ -295,7 +288,8 @@ super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 ```
-Next we need to cofigure picom as you can already see from my `bspwmrc` I use picoms window fade feature so theres a nice animation when I open a window I also use rounded corners anyway heres the config:
+#### Picom
+Next we need to cofigure picom as you can already see from my `bspwmrc` I use picoms window fade feature so theres a nice animation when I open a window I also use rounded corners which can be set by the `round-corners` varieble.
 ```
 ~/.config/picom/picom.conf
 ```
@@ -308,9 +302,10 @@ rounded-corners-exclude = [
 round-borders = 1;
 detect-rounded-corners = true;
 ```
+#### Polybar
 Next we need to configure polybar I use a fixed top bar and the matirial icons font.
-Warning: I have not tested these instructions so they may not work.
-To download this go to [there website](https://zavoloklom.github.io/material-design-iconic-font/) download the zip unzip the fonts directory and move and from that directory in the terminal run:
+**Warning:** I have not tested these instructions so they may not work.
+To download the material font first go to [there website](https://zavoloklom.github.io/material-design-iconic-font/) download the zip unzip the fonts directory. Then open it in the terminal. Now run:
 ```
 sudo mv Material-Design-Iconic-Font.ttf /user/share/fonts/truetype/Material-Design-Iconic-Font.ttf
 ```
@@ -333,7 +328,184 @@ echo "---" | tee -a /tmp/polybar1.log /tmp/polybar2.log
 polybar main -r >>/tmp/polybar1.log 2>&1 & disown
 echo "Bars launched..."
 ```
-After configurig polybar we finnally need to configure rofi:
+And then we need my config:
+```
+~/.config/polybar/config
+```
+```
+;==========================================================
+;
+;
+;██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+; ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+; ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+; ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+; ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+; ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+; To learn more about how to configure Polybar
+; go to https://github.com/polybar/polybar
+;
+; The README contains a lot of information
+;
+;==========================================================
+
+;==========================================================
+;colors
+;==========================================================
+
+[colors]
+bg = #aa14171d
+fg = #ffffff
+fg-slight-fade = #d3d3d3
+fg-faded = #a5a5a5
+accent = #008c77
+
+;==========================================================
+;main bar
+;==========================================================
+
+[bar/main]
+; appearence ==============================================
+height = 20
+background = ${colors.bg}
+foreground = ${colors.fg}
+padding-left = 1
+padding-right = 1
+
+; location ================================================
+bottom = false
+monitor = 
+
+; shape ===================================================
+; docked styles
+width = 100%
+; floating styles:
+;width =  99%
+;offset-x = 0.5%
+;offset-y = 0.5%
+;radius = 16
+
+; random =================================================
+line-size = 1
+wm-restack = bspwm
+
+; contents ================================================
+modules-left = workspaces pulseaudio wlan
+modules-center = title
+modules-right = memory time date cpu cpuMem
+
+; fonts ===================================================
+font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=9;3
+font-1 = Material\-Design\-Iconic\-Font:style=Design-Iconic-Font
+font-2 = unifont:fontformat=truetype:size=9;3
+
+;==========================================================
+; modules
+;==========================================================
+
+; date ===================================================
+[module/date]
+type = internal/date
+interval = 1000
+
+format = <label>
+format-prefix = " "
+format-prefix-foreground = ${colors.fg-faded}
+
+label = %time%
+
+time = %d/%m/%g
+
+; time ===================================================
+[module/time]
+type = internal/date
+interval = 60
+
+format = <label>
+format-prefix=" "
+format-prefix-foreground=${colors.fg-faded}
+
+label = %time%
+
+time = %H:%M%{F-}
+
+; memory ===========================================
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = "mem: "
+format-prefix-foreground = ${colors.fg-faded}
+format = <label>
+label = %gb_used%
+
+; wireless ==============================================
+[module/wlan]
+type = internal/network
+interface = wlan0
+interval = 3.0
+format-connected = <label-connected>
+label-connected = ""
+
+; cpu and mem ================================
+[module/cpuMem]
+type = internal/cpu internal/memory
+interval = 2
+format-prefix=""
+format-prefix-foreground = ${colors.fg-faded}
+format = <label>
+label = %percentage%%, %gb_used%
+
+; cpu ==========================================
+[module/cpu]
+type = internal/cpu
+interval = 2.0
+format-prefix=""
+format-prefix-foreground = ${colors.fg-faded}
+format = <label>
+label = "%percentage%% "
+
+; window title ======================================
+[module/title]
+type = internal/xwindow
+format = <label>
+label-maxlen = 60
+label-empty = ""
+
+; audio volume ================================
+[module/pulseaudio]
+type = internal/pulseaudio
+sink = alsa_output.pci-0000_03_00.6.analog-stereo
+interval = 5
+
+format-volume = <ramp-volume>
+format-muted = <label-muted>
+
+label-muted = ""
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+
+; workspaces =======================================
+[module/workspaces]
+type = internal/xworkspaces
+
+pin-workspaces = false
+enable-click = true
+enable-scroll = true
+
+format = <label-state>
+format-prefix-foreground = ${colors.fg-faded}
+label-monitor = %name%
+
+label-active = " "
+label-occupied = " "
+label-urgent = " "
+label-empty=" "
+```
+#### Rofi
+Finally after configurig polybar, we need to configure rofi:
 ```
 ~/.config/rofi/config.rasi
 ```
