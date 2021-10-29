@@ -61,12 +61,20 @@ yay -S teams
 yay -S discord-development
 ```
 
+## Login manager
+I use `lightdm` for my login manager just run:
+```
+sudo pacman -S lightdm
+sudo systemctl enable lightdm
+```
+Please note if you reboot into lightdm this will fail as there are no desktop enviroments to boot into. So you must install a DE.
+
 ## Wm
 I use bspwm + sxhkd + polybar + picom + rofi for my gui setup.
 ### Installation
 Just run
 ```
-pacman -S xorg bspwm sxhkd polybar picom rofi
+sudo pacman -S xorg bspwm sxhkd polybar picom rofi
 ```
 ### Configuration
 #### Bspwm
