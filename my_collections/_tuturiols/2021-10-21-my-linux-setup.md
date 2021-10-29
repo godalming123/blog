@@ -11,7 +11,6 @@ barba-page-namespace: post
 ## Screenshots
 These are some screenshots of my setup:
 
-
 ![1st image of my setup](/blog/imgs/my-linux-setup/1.png)
 ![2nd image of my setup](/blog/imgs/my-linux-setup/2.png)
 
