@@ -64,10 +64,20 @@ yay -S teams
 yay -S discord-development
 ```
 
+### Neofetch
+```
+sudo pacman -S neofetch
+```
+
+### Git
+```
+sudo pacman -S git
+```
+
 ## Login manager
 I use `lightdm` for my login manager just run:
 ```
-sudo pacman -S lightdm
+sudo pacman -S lightdm lightdm-gtk-greeter
 sudo systemctl enable lightdm
 ```
 Please note if you reboot into lightdm this will fail as there are no desktop enviroments to boot into. So you must install a DE.
