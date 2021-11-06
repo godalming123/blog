@@ -18,8 +18,9 @@ These are some screenshots of my setup:
 Currently I use Endevour but I plan to install arch next time I install a distro I just tried endeavour to try arch witout the installation hastle. And I loved it ❤️️! I could find any packadge I wanted with yay and pacman, it was fluid and performant, it was customizable and vanialla and the list goes on. ...and on ...and on ...FOREVER.
 
 ## Software
-### Yay
-I use yay as an aur helper and its what makes arch great anyway just run:
+### Yay or paru
+I use yay as an aur helper but am experimenting with paru and its what makes arch great anyway.
+#### Yay install
 ```
 git clone https://aur.archlinux.org/yay-git.git
 cd yay-git/
@@ -29,6 +30,37 @@ Finally we must remove the yay-git directory
 ```
 cd ../
 rmdir yay-git/
+```
+#### Paru install
+```
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+```
+And to remove the paru folders
+```
+cd ../
+rmdir paru/
+```
+### Termite or alacritty
+I use termite as my terminal emulater however have decided to update to alacritty.
+#### Termite
+```
+yay -S termite
+```
+#### Alacritty
+```
+sudo pacman -S alacritty
+```
+### Gnome-boxes
+Please dont judge me and hear me out; gnome boxes should be faster then virtualbox becuase it uses qemu which is built into the linux kernal and its got a better and cleaner interface respecting my arc gtk theme where virtualbox just looks ugly as well as automatically adapting my virtual machine size when I resize the window.
+```
+sudo pacman -S gnome-boxes
+```
+### Nautilus
+```
+sudo pacman -S nautilus
 ```
 ### Vscodium
 ```
@@ -42,7 +74,6 @@ yay -S btop
 ```
 yay -S jekyll
 ```
-
 ### Firefox
 ```
 pacman -S firefox
@@ -55,11 +86,11 @@ yay -S github-desktop-bin
 #### Configuration
 1. press ctrl + , on your keyboard
 
-### teams
+### Teams
 ```
 yay -S teams
 ```
-### discord
+### Discord
 ```
 yay -S discord-development
 ```
@@ -81,6 +112,12 @@ sudo pacman -S lightdm lightdm-gtk-greeter
 sudo systemctl enable lightdm
 ```
 Please note if you reboot into lightdm this will fail as there are no desktop enviroments to boot into. So you must install a DE.
+
+## Theming
+### Arc
+```
+sudo pacman -S arc-gtk-theme
+```
 
 ## Wm
 I use bspwm + sxhkd + polybar + picom + rofi for my gui setup.
