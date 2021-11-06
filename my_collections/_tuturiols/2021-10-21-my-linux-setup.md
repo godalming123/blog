@@ -14,10 +14,20 @@ These are some screenshots of my setup:
 ![1st image of my setup](/blog/imgs/my-linux-setup/1.png)
 ![2nd image of my setup](/blog/imgs/my-linux-setup/2.png)
 
+## Starting piont
+For this article I am assuming that you are starting with:
+- working terminal installation of arch-based distro
+- sudo setup
+
+
 ## Distro
 Currently I use Endevour but I plan to install arch next time I install a distro I just tried endeavour to try arch witout the installation hastle. And I loved it ❤️️! I could find any packadge I wanted with yay and pacman, it was fluid and performant, it was customizable and vanialla and the list goes on. ...and on ...and on ...FOREVER.
 
 ## Software
+### Git
+```
+sudo pacman -S git
+```
 ### Yay or paru
 I use yay as an aur helper but am experimenting with paru and its what makes arch great anyway.
 #### Yay install
@@ -94,15 +104,9 @@ yay -S teams
 ```
 yay -S discord-development
 ```
-
 ### Neofetch
 ```
 sudo pacman -S neofetch
-```
-
-### Git
-```
-sudo pacman -S git
 ```
 
 ## Login manager
