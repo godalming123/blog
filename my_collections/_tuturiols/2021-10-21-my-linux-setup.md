@@ -53,6 +53,10 @@ And to remove the paru folders
 cd ../
 rmdir paru/
 ```
+### Nano
+```
+pacman -S nano
+```
 ### Termite or alacritty
 I use termite as my terminal emulater however have decided to update to alacritty.
 #### Termite
