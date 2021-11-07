@@ -1,6 +1,6 @@
 remote_theme: "godalming123/matirlize-jekyll-theme"
 
-url: https://godalming123.github.io/blog
+#url: https://godalming123.github.io/blog
 baseurl: "/blog"
 
 collections:
