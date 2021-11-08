@@ -15,7 +15,9 @@
       {% if collection.isPostType %}
         <li>
           <a href="/blog/#{{ collection.label}}" class="waves-effect closeSidenavs">
-            <img src="{{ collection.icon }}" alt="{{ collection.iconAlt }}" class="invert-on-dark">
+            {% if collection.icon != "" %}
+              <img src="{{ collection.icon }}" alt="{{ collection.iconAlt }}" class="invert-on-dark">
+            {% endif %}
             {{ collection.name }}
           </a>
         </li>
