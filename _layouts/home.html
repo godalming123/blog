@@ -9,43 +9,45 @@ title: "My Blog"
 
 <!-- sections -->
 {% for collection in site.collections %}
-  <!-- title -->
-  <h4 id="{{ collection.label }}" >
-    {% if collection.icon != "" %}
-      <img loading="lazy" src="{{ collection.icon }}" alt="{{ collection.iconAlt }}" class="invert-on-dark">
+  {% if collection.isPostType %}
+    <!-- title -->
+    <h4 id="{{ collection.label }}" >
+      {% if collection.icon != "" %}
+        <img loading="lazy" src="{{ collection.icon }}" alt="{{ collection.iconAlt }}" class="invert-on-dark">
+      {% endif %}
+
+      {{ collection.name }}
+    </h4>
+
+    <!-- description -->
+    {% if collection.description != "" %}
+      <p>{{ collection.description }}</p>
     {% endif %}
 
-    {{ collection.name }}
-  </h4>
-
-  <!-- description -->
-  {% if collection.description != "" %}
-    <p>{{ collection.description }}</p>
-  {% endif %}
-
-  <!-- content -->
-  <div class="card-container alignment-2">
-    {% for document in collection.docs %}
-      <!-- content item -->
-      <div class="clickable-div card grey lighten-4 waves-effect">
-        <!-- url -->
-        <a href="{{ document.url }}" class="clickable-div-link">text of my link</a>
-        <!-- image -->
-        {% if document.front-image != "" %}
-          <div class="card-image">
-            <img loading="lazy" src="{{ document.front-image }}">
+    <!-- content -->
+    <div class="card-container alignment-2">
+      {% for document in collection.docs %}
+        <!-- content item -->
+        <div class="clickable-div card grey lighten-4 waves-effect">
+          <!-- url -->
+          <a href="{{ document.url }}" class="clickable-div-link">text of my link</a>
+          <!-- image -->
+          {% if document.front-image != "" %}
+            <div class="card-image">
+              <img loading="lazy" src="{{ document.front-image }}">
+            </div>
+          {%endif%}
+          <!-- text -->
+          <div class="card-content">
+            <!-- date -->
+            <span class="card-smalltext">{{ document.date | date: "%-d %B %Y" }}</span>
+            <!-- title -->
+            <span class="card-title">{{ document.title }}</span>
+            <!-- desription -->
+            <p>{{ document.excerpt }}</p>
           </div>
-        {%endif%}
-        <!-- text -->
-        <div class="card-content">
-          <!-- date -->
-          <span class="card-smalltext">{{ document.date | date: "%-d %B %Y" }}</span>
-          <!-- title -->
-          <span class="card-title">{{ document.title }}</span>
-          <!-- desription -->
-          <p>{{ document.excerpt }}</p>
         </div>
-      </div>
-    {% endfor %}
-  </div>
+      {% endfor %}
+    </div>
+  {% endif %}
 {% endfor %}

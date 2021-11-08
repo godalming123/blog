@@ -12,12 +12,14 @@
     <!-- pages -->
     <li><a href="/blog/#intro" class="waves-effect closeSidenavs"><i class="material-icons">drive_file_rename_outline</i>Intro</a></li>
     {% for collection in site.collections %}
-      <li>
-        <a href="/blog/#{{ collection.label}}" class="waves-effect closeSidenavs">
-          <img src="{{ collection.icon }}" alt="{{ collection.iconAlt }}" class="invert-on-dark">
-          {{ collection.name }}
-        </a>
-      </li>
+      {% if collection.isPostType %}
+        <li>
+          <a href="/blog/#{{ collection.label}}" class="waves-effect closeSidenavs">
+            <img src="{{ collection.icon }}" alt="{{ collection.iconAlt }}" class="invert-on-dark">
+            {{ collection.name }}
+          </a>
+        </li>
+      {% endif %}
     {% endfor %}
     <!-- contact -->
     <h4>Info</h4>
