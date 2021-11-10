@@ -8,7 +8,7 @@ front-image: ""
 barba-page-namespace: post
 ---
 
-This is a guide to open most hp laptop's if this does not work with your laptop try and find another guide.
+This is a guide to open most hp laptop's (and it worked on my laptop) if this does not work with your laptop try and find another guide.
 
 
 
