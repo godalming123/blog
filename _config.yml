@@ -12,6 +12,14 @@ collections:
     icon: ""
     isPostType: true
     #iconAlt: a suitcase
+  still_in_the_writing:
+    output: true
+    sort_by: date
+    name: Still In Th Writing
+    description: See the future of this blog. but be warned; Its wacky!
+    icon: ""
+    isPostType: true
+    #iconAlt: a suitcase
   working_on:
     output: true
     sort_by: date

@@ -30,7 +30,9 @@ title: "My Blog"
         <!-- content item -->
         <div class="clickable-div card grey lighten-4 waves-effect">
           <!-- url -->
-          <a href="{{ document.url }}" class="clickable-div-link">text of my link</a>
+          {% if collection.output == true %}<!--if jekyll will generate a url for the blog-->
+            <a href="{{ document.url }}" class="clickable-div-link">text of my link</a>
+          {% endif %}
           <!-- image -->
           {% if document.front-image != "" %}
             <div class="card-image">
