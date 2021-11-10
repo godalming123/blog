@@ -41,7 +41,7 @@ collections:
     sort_by: date
     name: My Blogs
     description: The latest happening's
-    icon: /icons/blogger.svg
+    icon: "/icons/blogger.svg"
     iconAlt: a capital B
     isPostType: true
 
