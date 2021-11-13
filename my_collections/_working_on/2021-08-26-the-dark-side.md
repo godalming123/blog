@@ -27,6 +27,8 @@ You ask, well the auto one will change the theme based on system theme and the o
 <a target="_blank" href="https://github.com/pages-themes/minimal/pull/121">Veiw The Pull</a> |
 <a target="_blank" href="https://github.com/godalming123/minimal">Star The Repo</a>
 
+{% include mailing-list-mention.html %}
+
 ## Updates
 - ### I added support for changing the theme in the config.yaml
   I have just merged a branch that adds support for changing the theme in the config.yaml options just say:

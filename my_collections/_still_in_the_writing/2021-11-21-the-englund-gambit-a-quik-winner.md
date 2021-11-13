@@ -8,3 +8,4 @@ type: "still in the writing"
 front-image: "https://i1.wp.com/chesspathways.com/wp-content/uploads/2019/10/49a.png?resize=300%2C300&ssl=1"
 barba-page-namespace: post
 ---
+{% include mailing-list-mention.html %}

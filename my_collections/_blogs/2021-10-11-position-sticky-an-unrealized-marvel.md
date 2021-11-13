@@ -36,6 +36,8 @@ left: calc(100vw - 210.617px - 5px);
 ```
 Yes I know; its a bit janky - assuming the buttons width and height - but so is any js api that can do this. ...And the rest of the web as well for that matter.
 
+{% include mailing-list-mention.html %}
+
 ## The limitations
 Sadly this does have limitations and they are fairly large:
 ### 1. We assume that the item you are animating has a certain `width` and `height`.

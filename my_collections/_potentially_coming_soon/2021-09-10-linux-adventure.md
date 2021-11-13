@@ -9,3 +9,5 @@ type: "potentilly coming soon"
 front-image: ""
 barba-page-namespace: post
 ---
+
+{% include mailing-list-mention.html %}

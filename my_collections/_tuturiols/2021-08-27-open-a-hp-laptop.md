@@ -20,3 +20,5 @@ This is a guide to open most hp laptop's (and it worked on my laptop) if this do
 4. Unscrew all of the screws under the strips.
 5. Get a credit card or something to levarage the top of the laptop out.
 6. Take of the bottom cover **and your done!**
+
+{% include mailing-list-mention.html %}
