@@ -44,8 +44,12 @@ title: "My Blog"
             <!-- date -->
             <span class="card-smalltext">{{ document.date | date: "%-d %B %Y" }}</span>
             <!-- tags -->
-            {% if document.tags %}
-              <div><span class="tag">{{ document.uiTags | join: "</span> <span class="tag">" }}</span></div>
+            {% if document.uiTags %}
+              <div>
+                {% for uiTag in document.uiTags %}
+                  <span class="tag">uiTag</span>
+                {% endfor %}
+              </div>
             {% endif %}
             <!-- title -->
             <span class="card-title">{{ document.title }}</span>
