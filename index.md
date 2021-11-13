@@ -1,6 +1,5 @@
 ---
 layout: home
-title: "My Blog"
 barba-page-namespace: home
 ---
 
