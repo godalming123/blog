@@ -156,8 +156,8 @@ bash ~/.screenlayout/workstation.sh
 picom -f &
 pgrep -x sxhkd > /dev/null || sxhkd &
 bash ~/.config/polybar/launch.sh &
-bspc monitor HDMI-1 -d 1 2 3 4 5
-bspc monitor eDP-1 -d 6 7 8 9 10
+bspc monitor HDMI-1 -d 1 2 3 4 5 6 7 #HDMI
+bspc monitor eDP-1 -d 8 9 10 #laptop screen
 
 # =========================================================
 # options
