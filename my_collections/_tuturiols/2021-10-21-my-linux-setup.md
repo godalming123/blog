@@ -2,7 +2,8 @@
 layout: post
 author: Me
 title: My linux setup
-tags: linux bspwm arch picom sxhkd polybar
+uiTags: linux bspwm arch picom sxhkd polybar
+searchTags: linux bspwm arch picom sxhkd polybar
 type: "tuturiol"
 front-image: "/blog/imgs/my-linux-setup/1.png"
 barba-page-namespace: post

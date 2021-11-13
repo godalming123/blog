@@ -2,7 +2,8 @@
 layout: post
 author: Me
 title: Open An Hp Laptop
-tags: open
+uiTags: open laptop
+searchTags: open laptop
 type: "tuturiol"
 front-image: ""
 barba-page-namespace: post
