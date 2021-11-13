@@ -13,7 +13,7 @@ collections:
     isPostType: true
     #iconAlt: a suitcase
   still_in_the_writing:
-    output: true
+    output: false
     sort_by: date
     name: Still In The Writing
     description: See the future of this blog. but be warned; Its wacky!

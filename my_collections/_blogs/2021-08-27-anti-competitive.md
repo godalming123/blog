@@ -3,7 +3,8 @@ layout: post
 author: Me
 title: Anti competitive?
 barba-page-namespace: post
-tags: google anti-competitive
+uiTags: google anti-competitive
+searchTags: google anti-competitive
 front-image: ""
 ---
 

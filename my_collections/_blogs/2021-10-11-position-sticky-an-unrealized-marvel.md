@@ -2,7 +2,8 @@
 layout: post
 author: Me
 title: "position: sticky; an ungradurated marvel"
-tags: css stichy position
+uiTags: css sticky position
+searchTags: css sticky position
 type: "blog"
 front-image: ""
 barba-page-namespace: post
