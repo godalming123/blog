@@ -47,7 +47,7 @@ title: "My Blog"
             {% if document.uiTags %}
               <div>
                 {% for uiTag in document.uiTags %}
-                  <span class="tag">uiTag</span>
+                  <span class="tag">{{ uiTag }}</span>
                 {% endfor %}
               </div>
             {% endif %}
