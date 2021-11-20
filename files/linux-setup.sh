@@ -1,16 +1,24 @@
+# update
+sudo pacman -Syu
+
+# pacman software
 sudo pacman -S git nano alacritty gnome-boxes nautilus firefox neofetch xsercurelock lightdm lightdm-gtk-greeter arc-gtk-theme xorg bspwm sxhkd polybar picom rofi
 
+# paru
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 cd ../
 rmdir paru/
 
+# paru software
 paru -S vscodium-bin btop jekyll github-desktop-bin teams discord-development
 
+# lightdm setup
 sudo systemctl enable lightdm
 
-touch ~/.config/bspwm/baspwmrc
+# add config files
+touch ~/.config/bspwm/bspwmrc
 touch ~/.screenlayout/workstation.sh
 touch ~/.config/sxhkd/sxhkdrc
 touch ~/.config/picom/picom.conf
