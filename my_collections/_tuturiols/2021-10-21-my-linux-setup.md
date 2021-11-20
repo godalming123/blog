@@ -26,6 +26,7 @@ For this article I am assuming that you are starting with:
 Currently I use Endevour but I plan to install arch next time I install a distro I just tried endeavour to try arch witout the installation hastle. And I loved it ❤️️! I could find any packadge I wanted with yay and pacman, it was fluid and performant, it was customizable and vanialla and the list goes on. ...and on ...and on ...FOREVER.
 
 ## Basic script for setup
+**Warning:** this setup script does'nt setup any of my configs and does'nt install the matirilize fonts for polybar so yuo will have to manually edit the files with nano after running this script before you reboot
 ```
 cd Downloads/
 wget https://godalming123.github.io/blog/files/linux-setup.sh
