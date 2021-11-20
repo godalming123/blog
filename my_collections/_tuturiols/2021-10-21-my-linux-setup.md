@@ -114,6 +114,10 @@ yay -S discord-development
 ```
 sudo pacman -S neofetch
 ```
+### X secure lock
+```
+sudo pacman -S xsercurelock
+```
 
 ## Login manager
 I use `lightdm` for my login manager just run:
