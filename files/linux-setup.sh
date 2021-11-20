@@ -29,12 +29,13 @@ touch ~/.config/rofi/config.rasi
 
 
 echo "========================================================"
-
+echo "========================================================"
+echo ""
 echo "========================================================"
 echo "INSTALL FINISHED"
 echo "========================================================"
-
+echo ""
 echo "Now you must install icon fonts for polybar as instructed in https://godalming123.github.io/blog/tuturiols/2021-10-21-my-linux-setup.html#polybar. You should also edit the configs as shown in https://godalming123.github.io/blog/tuturiols/2021-10-21-my-linux-setup.html"
-
+echo ""
 echo "========================================================"
 echo "========================================================"
