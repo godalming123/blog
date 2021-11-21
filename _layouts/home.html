@@ -28,7 +28,7 @@ title: "My Blog"
     <div class="card-container alignment-2">
       {% for document in collection.docs %}
         <!-- content item -->
-        <div class="clickable-div card grey lighten-4 waves-effect">
+        <div class="blog-post-card clickable-div card grey lighten-4 waves-effect">
           <!-- url -->
           {% if collection.output == true %}<!--if jekyll will generate a url for the blog-->
             <a href="{{ document.url }}" class="clickable-div-link">text of my link</a>
