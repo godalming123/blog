@@ -1,13 +1,17 @@
 ---
 layout: post
-author: Me
+author: Me - Godalming123
+authorUrl: https://godalming123.github.io/new-site
 title: The Dark Side
+description: ""
 uiTags: dark-mode jekyll minimal-theme cayman-theme theme
 searchTags: dark-mode jekyll minimal-theme cayman-theme theme
 type: "stuff i'm working on"
 front-image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.FCx-hYGX_8GWrXo8KjVbvAHaE8%26pid%3DApi&f=1"
 barba-page-namespace: post
 ---
+
+**UPDATE: ** This site no longer has dark theme 😥. As I have updated my theme to use matirlize instead of minimal. But you can still like the pull request and comment your thoughts
 
 Wondering why this site is dark? Well its becuase I am forking the
 <a target="_blank" href="https://jekyllrb.com/docs/themes/">Jekyll Themes</a>
@@ -36,7 +40,7 @@ You ask, well the auto one will change the theme based on system theme and the o
   color-scheme: dark | light | auto | auto-deafualt dark
   ```
   .
-  The first 2 are prepty self explanatory but where it gets interesting is the last 2 as they change the theme based on the device theme the deferencew between theme lies in what they do if the device does not support changing the theme based on the device the former of the to will default to alight however the later deafualts to a dark theme.
+  The first 2 are property's are fairly self explanatory but where it gets interesting is the last 2 as they change the theme based on the device theme the deferencew between theme lies in what they do if the device does not support changing the theme based on the device the former of the to will default to alight however the later deafualts to a dark theme.
   > always remember last is not least
 
   <small>

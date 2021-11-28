@@ -54,7 +54,12 @@ title: "My Blog"
             <!-- title -->
             <span class="card-title">{{ document.title }}</span>
             <!-- desription -->
-            <p>{{ document.excerpt }}</p>
+            {% case document.description %}
+              {% when "" %}
+                <p>{{ document.excerpt }}</p>
+              {% else %}
+              	<p>{{ document.description }}</p>
+            {% endcase %}
           </div>
         </div>
       {% endfor %}

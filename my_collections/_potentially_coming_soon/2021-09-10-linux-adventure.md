@@ -1,7 +1,9 @@
 ---
 layout: post
-author: Me
+author: Me - Godalming123
+authorUrl: https://godalming123.github.io/new-site
 title: Linux Adventure!
+description: ""
 uiTags: linux
 searchTags: linux
 type: "potentilly coming soon"

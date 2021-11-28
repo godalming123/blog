@@ -1,7 +1,9 @@
 ---
 layout: post
-author: Me
+author: Me - Godalming123
+authorUrl: https://godalming123.github.io/new-site
 title: Anti competitive?
+description: ""
 barba-page-namespace: post
 uiTags: google anti-competitive
 searchTags: google anti-competitive

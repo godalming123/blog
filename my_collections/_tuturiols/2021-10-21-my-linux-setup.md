@@ -1,7 +1,9 @@
 ---
 layout: post
-author: Me
+author: Me - Godalming123
+authorUrl: https://godalming123.github.io/new-site
 title: My linux setup
+description: ""
 uiTags: linux bspwm arch picom sxhkd polybar
 searchTags: linux bspwm arch picom sxhkd polybar
 type: "tuturiol"
