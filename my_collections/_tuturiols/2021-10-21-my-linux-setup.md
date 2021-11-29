@@ -66,6 +66,10 @@ And to remove the paru folders
 cd ../
 rmdir paru/
 ```
+### Flameshot
+```
+pacman -S flameshot
+```
 ### Micro
 ### Installation
 ```
@@ -143,10 +147,6 @@ yay -S discord-development
 ```
 sudo pacman -S neofetch
 ```
-### X secure lock
-```
-sudo pacman -S xsercurelock
-```
 
 ## Login manager
 I use `lightdm` for my login manager just run:
@@ -165,11 +165,11 @@ sudo pacman -S arc-gtk-theme
 {% include mailing-list-mention.html %}
 
 ## Wm
-I use bspwm + sxhkd + polybar + picom + rofi for my gui setup.
+I use bspwm + sxhkd + polybar + picom + rofi and dunst for my gui setup.
 ### Installation
 Just run
 ```
-sudo pacman -S xorg bspwm sxhkd polybar picom rofi
+sudo pacman -S xorg bspwm sxhkd polybar picom rofi dunst
 ```
 ### Configuration
 #### Bspwm
@@ -264,17 +264,15 @@ Next we need to setup our sxhkd config I generally do not like have hotkeys dire
 
 # 1. 1. terminal emulator --------
 super + Return
-	termite
+	alacritty
 
 # 1. 2. program launcher --------
 super + e
 	rofi -show run
 
 # 1. 3. screenshots -------------
-super + p # full
-    scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/screenshots && mv $f ~/screenshots && xclip -selection clipboard -t image/png -i ~/screenshots/`ls -1 -t ~/screenshots | head -1`'
-super + shift + p # selection
-    scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/screenshots && mv $f ~/screenshots && xclip -selection clipboard -t image/png -i ~/screenshots/`ls -1 -t ~/screenshots | head -1`'
+super + p
+    flameshot gui
 
 # 1. 4. sxhkd relead --------
 super + Escape
@@ -282,7 +280,7 @@ super + Escape
 
 # 1. 5. lock screen and sleep ----
 super + x
-	env XSECURELOCK_DISCARD_FIRST_KEYPRESS=0 xsecurelock & systemctl suspend
+	env dm-tool switch-to-greeter & systemctl -i suspend
 
 # -----------------------
 # 2. bspwm hotkeys
