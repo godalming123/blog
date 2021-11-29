@@ -66,9 +66,15 @@ And to remove the paru folders
 cd ../
 rmdir paru/
 ```
-### Nano
+### Micro
+### Installation
 ```
-pacman -S nano
+pacman -S micro
+```
+### Configuration
+Open micro type `ctrl + e` and then
+```
+set colorscheme cm16
 ```
 ### Termite or alacritty
 I use termite as my terminal emulater however have decided to update to alacritty.
@@ -77,8 +83,20 @@ I use termite as my terminal emulater however have decided to update to alacritt
 yay -S termite
 ```
 #### Alacritty
+##### Installation
 ```
 sudo pacman -S alacritty
+```
+##### Configuration
+```
+~/.config/alacritty/alacritty.yml
+```
+```
+background_opacity: 0.9
+
+colors:
+    primary:
+        background: "#2f343f"
 ```
 ### Gnome-boxes
 Please dont judge me and hear me out; gnome boxes should be faster then virtualbox becuase it uses qemu which is built into the linux kernal and its got a better and cleaner interface respecting my arc gtk theme where virtualbox just looks ugly as well as automatically adapting my virtual machine size when I resize the window.
