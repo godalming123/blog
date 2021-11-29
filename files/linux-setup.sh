@@ -2,7 +2,7 @@
 sudo pacman -Syu
 
 # pacman software
-sudo pacman -S git discord micro alacritty gnome-boxes nautilus firefox neofetch xsercurelock lightdm lightdm-gtk-greeter arc-gtk-theme xorg bspwm sxhkd polybar picom rofi
+sudo pacman -S git discord micro dunst alacritty gnome-boxes nautilus firefox neofetch lightdm lightdm-gtk-greeter arc-gtk-theme xorg bspwm sxhkd polybar picom rofi flameshot
 
 # paru
 git clone https://aur.archlinux.org/paru.git
@@ -18,6 +18,7 @@ paru -S vscodium-bin btop jekyll github-desktop-bin teams
 sudo systemctl enable lightdm
 
 # add config files
+touch ~/.config/alacritty/alacritty.yml
 touch ~/.config/bspwm/bspwmrc
 touch ~/.screenlayout/workstation.sh
 touch ~/.config/sxhkd/sxhkdrc
