@@ -4,8 +4,8 @@ author: Me - Godalming123
 authorUrl: https://godalming123.github.io/new-site
 title: "position: sticky; an ungradurated marvel"
 description: "Position sticky is cool right? you can have buttons that behave normally. ...Then stay on the screen when you scroll ...And then disapear agian when you scroll further. But in this article I take it to the next level by animating the sticky element into the desired position when it goes off the screen. Adding even more WOW facter!"
-uiTags: css sticky position
-searchTags: css sticky position
+uiTags: ["css", "sticky position"]
+searchTags: ["css", "sticky", "position"]
 type: "blog"
 front-image: ""
 barba-page-namespace: post

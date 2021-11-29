@@ -5,8 +5,8 @@ authorUrl: https://godalming123.github.io/new-site
 title: Anti competitive?
 description: ""
 barba-page-namespace: post
-uiTags: google anti-competitive
-searchTags: google anti-competitive
+uiTags: ["google",  "anti-competitive"]
+searchTags: ["google", "anti-competitive"]
 front-image: ""
 type: "blog"
 ---

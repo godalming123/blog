@@ -4,8 +4,8 @@ author: Me - Godalming123
 authorUrl: https://godalming123.github.io/new-site
 title: The Dark Side
 description: ""
-uiTags: dark-mode jekyll minimal-theme cayman-theme theme
-searchTags: dark-mode jekyll minimal-theme cayman-theme theme
+uiTags: ["dark mode", "jekyll", "minimal theme", "cayman theme"]
+searchTags: ["dark", "jekyll", "minimal", "cayman", "theme", "mode"]
 type: "stuff i'm working on"
 front-image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.FCx-hYGX_8GWrXo8KjVbvAHaE8%26pid%3DApi&f=1"
 barba-page-namespace: post

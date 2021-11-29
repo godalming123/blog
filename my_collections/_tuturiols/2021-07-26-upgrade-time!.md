@@ -4,8 +4,8 @@ author: Me - Godalming123
 authorUrl: https://godalming123.github.io/new-site
 title: Upgrade Time
 description: ""
-uiTags: ram upgrade
-searchTags: ram upgrade
+uiTags: ["ram", "upgrade"]
+searchTags: ["ram", "upgrade"]
 type: "tuturiol"
 front-image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Zo9ihPi40rQ1CPL39WI8_wHaDV%26pid%3DApi&f=1"
 barba-page-namespace: post
