@@ -133,7 +133,11 @@ pacman -S firefox
 yay -S github-desktop-bin
 ```
 #### Configuration
-1. press ctrl + , on your keyboard
+1. Press `ctrl` + `,` on your keyboard to enter the acounts configuration menu.
+2. Press sign in under the github.com subheading.
+3. Click continue in browser to open a browser verefecation session.
+4. This should open your browser login to github if requiered.
+5. Then select github desktop to open the smart link. And your done!
 
 ### Teams
 ```
