@@ -31,7 +31,7 @@ Currently I use Endevour but I plan to install arch next time I install a distro
 **Warning:** this setup script does'nt setup any of my configs and does'nt install the matirilize fonts for polybar so yuo will have to manually edit the files with nano after running this script before you reboot
 ```
 cd Downloads/
-wget https://godalming123.github.io/blog/files/linux-setup.sh
+wget https://godalming123.github.io/blog/files/linux-setup/everything.sh
 chmod a+x linux-setup.sh
 bash linux-setup.sh
 ```
