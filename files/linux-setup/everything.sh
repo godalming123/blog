@@ -25,6 +25,7 @@ echo ""
 wget https://godalming123.github.io/blog/files/linux-setup/software-extra.sh
 chmod a+x software-extra.sh
 bash software-extra.sh
+echo ""
 echo "================================================================"
 echo "==== ...FINISHED INSTALLATION AND CONFIIGURATION OF SYSTEM ====="
 echo "================================================================"
