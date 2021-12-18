@@ -12,25 +12,35 @@ echo "STARTING DESKTOP SETUP..."
 # lightdm setup
 sudo systemctl enable lightdm
 
-# add config files
-curl -o ~/.config/alacritty/alacritty.yml https://godalming123.github.io/blog/files/linux-setup/configs/alacritty.yml
+# add config folder
+mkdir ~/.config/
 
-curl -o ~/.config/bspwm/bspwmrc           https://godalming123.github.io/blog/files/linux-setup/configs/bspwmrc
+# add config files
+mkdir     ~/.config/alacritty/
+curl -o   ~/.config/alacritty/alacritty.yml https://godalming123.github.io/blog/files/linux-setup/configs/alacritty.yml
+
+mkdir     ~/.config/bspwm/
+curl -o   ~/.config/bspwm/bspwmrc           https://godalming123.github.io/blog/files/linux-setup/configs/bspwmrc
 chmod a+x ~/.config/bspwm/bspwmrc
 
-curl -o ~/.screenlayout/workstation.sh    https://godalming123.github.io/blog/files/linux-setup/configs/screenlayout.sh
+mkdir     ~/.screenlayout/
+curl -o   ~/.screenlayout/workstation.sh    https://godalming123.github.io/blog/files/linux-setup/configs/screenlayout.sh
 chmod a+x ~/.screenlayout/workstation.sh
 
-curl -o ~/.config/sxhkd/sxhkdrc           https://godalming123.github.io/blog/files/linux-setup/configs/sxhkdrc
+mkdir     ~/.config/sxhkd/
+curl -o   ~/.config/sxhkd/sxhkdrc           https://godalming123.github.io/blog/files/linux-setup/configs/sxhkdrc
 
-curl -o ~/.config/picom/picom.conf        https://godalming123.github.io/blog/files/linux-setup/configs/picom.conf
+mkdir     ~/.config/picom/
+curl -o   ~/.config/picom/picom.conf        https://godalming123.github.io/blog/files/linux-setup/configs/picom.conf
 
-curl -o ~/.config/polybar/launch.sh       https://godalming123.github.io/blog/files/linux-setup/configs/polybar-launch.sh
+mkdir     ~/.config/polybar/
+curl -o   ~/.config/polybar/launch.sh       https://godalming123.github.io/blog/files/linux-setup/configs/polybar-launch.sh
 chmod a+x ~/.config/polybar/launch.sh
 
-curl -o ~/.config/polybar/config          https://godalming123.github.io/blog/files/linux-setup/configs/polybar-config
+curl -o   ~/.config/polybar/config          https://godalming123.github.io/blog/files/linux-setup/configs/polybar-config
 
-curl -o ~/.config/rofi/config.rasi        https://godalming123.github.io/blog/files/linux-setup/configs/rofi-config.rasi
+mkdir     ~/.config/rofi/
+curl -o   ~/.config/rofi/config.rasi        https://godalming123.github.io/blog/files/linux-setup/configs/rofi-config.rasi
 echo "...FINISHED DESKTOP SETUP"
 echo ""
 echo "========== ...FINISHED DESKTOP INSTALLATION AND SETUP =========="
