@@ -6,7 +6,7 @@
 
 bash ~/.screenlayout/workstation.sh
 
-picom -f &
+picom --experimental-backends &
 pgrep -x sxhkd > /dev/null || sxhkd &
 bash ~/.config/polybar/launch.sh &
 bspc monitor HDMI-1 -d 1 2 3 4 5 6 7 #HDMI
