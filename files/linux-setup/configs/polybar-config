@@ -168,17 +168,3 @@ label-active = " "
 label-occupied = " "
 label-urgent = " "
 label-empty=" "
-```
-#### Rofi
-Finally after configurig polybar, we need to configure rofi:
-```
-~/.config/rofi/config.rasi
-```
-```
-configuration {
- modi: "window,drun,ssh,combi,run";
- theme: "solarized";
- combi-modi: "window,drun,ssh";
- show-icons: true;
- terminal: "termite";
-}
