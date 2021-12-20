@@ -34,7 +34,7 @@ mkdir Downloads/
 cd Downloads/
 curl -o setup-everything.sh https://godalming123.github.io/blog/files/linux-setup/everything.sh
 chmod a+x everything.sh
-bash evrything.sh
+bash everything.sh
 ```
 
 ## Software
