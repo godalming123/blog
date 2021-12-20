@@ -1,3 +1,7 @@
+#! /bin/sh
+
+# desktop setup script version 0.1
+
 echo "========== STARTING DESKTOP INSTALLATION AND SETUP... =========="
 echo ""
 echo "STARTING DESKTOP INSTALLATION..."
@@ -42,6 +46,7 @@ curl -o        ~/.config/polybar/config          https://godalming123.github.io/
 mkdir          ~/.config/rofi/
 curl -o        ~/.config/rofi/config.rasi        https://godalming123.github.io/blog/files/linux-setup/configs/rofi-config.rasi
 
+sudo mkdir     /usr/share/fonts/TTF/
 sudo curl -o   /usr/share/fonts/TTF/Material-Design-Iconic-Font.ttf https://godalming123.github.io/blog/files/linux-setup/configs/Material-Design-Iconic-Font.ttf
 echo "...FINISHED DESKTOP SETUP"
 echo ""
