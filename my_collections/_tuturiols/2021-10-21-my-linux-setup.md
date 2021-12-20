@@ -413,7 +413,7 @@ Next we need to configure polybar I use a fixed top bar and the matirial icons f
 **Warning:** I have not tested these instructions so they may not work.
 To download the material font first go to [there website](https://zavoloklom.github.io/material-design-iconic-font/) download the zip unzip the fonts directory. Then open it in the terminal. Now run:
 ```
-sudo mv Material-Design-Iconic-Font.ttf /user/share/fonts/truetype/Material-Design-Iconic-Font.ttf
+sudo mv Material-Design-Iconic-Font.ttf /usr/share/fonts/TTF/Material-Design-Iconic-Font.ttf
 ```
 Now that we've installed the necersarry fonts for my polybar config lets set it up.
 First we need a launch file:
