@@ -20,6 +20,9 @@ sudo systemctl enable lightdm
 mkdir ~/.config/
 
 # add config files
+curl -o        ~/.bashrc                         https://godalming123.github.io/blog/files/linux-setup/configs/.bashrc
+curl -o        ~/.welcome_screen                 https://godalming123.github.io/blog/files/linux-setup/configs/bash-welcome
+
 mkdir          ~/.config/alacritty/
 curl -o        ~/.config/alacritty/alacritty.yml https://godalming123.github.io/blog/files/linux-setup/configs/alacritty.yml
 
