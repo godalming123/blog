@@ -41,8 +41,9 @@ alias polybar='bash ~/.config/polybar/launch.sh'
 alias sxhkd='pgrep -x sxhkd > /dev/null || sxhkd'
 alias picom='picom --experimental-backends'
 alias conky='bash ~/.config/conky/conkystartup.sh'
+alias jgmenu='killall jgmenu'
 #open a micro instance configuring all my important files
-alias config='cd ~/.config && micro ~/.bashrc ~/.welcome_screen bspwm/bspwmrc polybar/config polybar/launch.sh sxhkd/sxhkdrc jgmenu/jgmenurc jgmenu/append.csv jgmenu/prepend.csv jgmenu/menu-on-right jgmenu/right-click-menu'
+alias config='cd ~/.config && micro ~/.bashrc ~/.welcome_screen bspwm/bspwmrc picom/picom.conf  polybar/config polybar/launch.sh polybar/polywins.sh sxhkd/sxhkdrc jgmenu/jgmenurc jgmenu/append.csv jgmenu/prepend.csv jgmenu/menu-on-right jgmenu/right-click-menu'
 
 [[ "$(whoami)" = "root" ]] && return
 
