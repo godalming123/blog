@@ -16,6 +16,24 @@ echo "STARTING DESKTOP SETUP..."
 # lightdm setup
 sudo systemctl enable lightdm
 
+# icons in the terminal
+# git clone https://github.com/sebastiencs/icons-in-terminal.git
+# cd icons-in-terminal
+# bash install-autodetect.sh
+# cd ../
+
+#icons in ls menu
+# sudo pacman -S wget
+# git clone https://github.com/sebastiencs/ls-icons.git
+# ./bootstrap
+# export CFLAGS=-DNO_TRUE_COLOURS=1 # Execute this line _only_ if your terminal doesn't support true colours
+# export CC=clang CXX=clang++
+# ./configure --prefix=/opt/coreutils
+# make
+# make install
+# /opt/coreutils/bin/ls
+# cd ../
+
 # add config folder
 mkdir ~/.config/
 
