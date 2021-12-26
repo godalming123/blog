@@ -1,8 +1,6 @@
 #! /bin/sh
 
-# desktop setup script version 0.1
-
-echo "========== STARTING DESKTOP INSTALLATION AND SETUP... =========="
+echo "=======STARTING DESKTOP INSTALLATION AND SETUP V0.1.1 ... ======"
 echo ""
 echo "STARTING DESKTOP INSTALLATION..."
 
@@ -13,16 +11,13 @@ echo "...FINISHED DESKTOP INSTALLATION"
 echo ""
 echo "STARTING DESKTOP SETUP..."
 
-# lightdm setup
-sudo systemctl enable lightdm
-
 # icons in the terminal
 # git clone https://github.com/sebastiencs/icons-in-terminal.git
 # cd icons-in-terminal
 # bash install-autodetect.sh
 # cd ../
 
-#icons in ls menu
+# icons in ls menu
 # sudo pacman -S wget
 # git clone https://github.com/sebastiencs/ls-icons.git
 # ./bootstrap
@@ -69,6 +64,10 @@ curl -o        ~/.config/rofi/config.rasi        https://godalming123.github.io/
 
 sudo mkdir     /usr/share/fonts/TTF/
 sudo curl -o   /usr/share/fonts/TTF/Material-Design-Iconic-Font.ttf https://godalming123.github.io/blog/files/linux-setup/configs/Material-Design-Iconic-Font.ttf
+
 echo "...FINISHED DESKTOP SETUP"
 echo ""
 echo "========== ...FINISHED DESKTOP INSTALLATION AND SETUP =========="
+
+# lightdm setup
+sudo systemctl enable lightdm --now
