@@ -33,8 +33,15 @@ echo "STARTING DESKTOP SETUP..."
 mkdir ~/.config/
 
 # add config files
-mkdir          /etc/lightdm
-curl -o        /etc/lightdm/lightdm.conf           https://godalming123.github.io/blog/files/linux-setup/configs/lightdm.conf
+sudo mkdir     /etc/lightdm
+sudo curl -o   /etc/lightdm/lightdm.conf                       https://godalming123.github.io/blog/files/linux-setup/configs/lightdm.conf
+sudo curl -o   /etc/lightdm/lightdm-gtk-greeter.conf           https://godalming123.github.io/blog/files/linux-setup/configs/lightdm-gtk-greeter.conf
+
+sudo mkdir     /usr/share/backgrounds/
+sudo mkdir     /usr/share/backgrounds/bspwm/
+sudo curl -o   /usr/share/backgrounds/bspwm/windows.jpg           https://godalming123.github.io/blog/files/linux-setup/configs/wallapapers/windows.jpg
+sudo curl -o   /usr/share/backgrounds/bspwm/detailed-mountain.jpg https://godalming123.github.io/blog/files/linux-setup/configs/wallapapers/detailed-mountain.jpg
+sudo curl -o   /usr/share/backgrounds/bspwm/simple-mountain.jpg   https://godalming123.github.io/blog/files/linux-setup/configs/wallapapers/simple-mountain.jpg
 
 curl -o        ~/.bashrc                           https://godalming123.github.io/blog/files/linux-setup/configs/.bashrc
 curl -o        ~/.welcome_screen                   https://godalming123.github.io/blog/files/linux-setup/configs/bash-welcome
