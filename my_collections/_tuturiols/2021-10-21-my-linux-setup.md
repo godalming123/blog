@@ -28,7 +28,7 @@ For this article I am assuming that you are starting with:
 Currently I use Endevour but I plan to install arch next time I install a distro I just tried endeavour to try arch witout the installation hastle. And I loved it ❤️️! I could find any packadge I wanted with yay and pacman, it was fluid and performant, it was customizable and vanialla and the list goes on. ...and on ...and on ...FOREVER.
 
 ## Basic script for setup
-**Warning:** this setup script does'nt setup any of my configs and does'nt install the matirilize fonts for polybar so yuo will have to manually edit the files with nano after running this script before you reboot
+Just run these commands to setup bspwm with my taste
 ```
 mkdir Downloads/
 cd Downloads/
@@ -409,11 +409,10 @@ round-borders = 1;
 detect-rounded-corners = true;
 ```
 #### Polybar
-Next we need to configure polybar I use a fixed top bar and the matirial icons font.
-**Warning:** I have not tested these instructions so they may not work.
-To download the material font first go to [there website](https://zavoloklom.github.io/material-design-iconic-font/) download the zip unzip the fonts directory. Then open it in the terminal. Now run:
+Next we need to configure polybar I use a fixed top bar and the matirial icons font. To install this font run:
 ```
-sudo mv Material-Design-Iconic-Font.ttf /usr/share/fonts/TTF/Material-Design-Iconic-Font.ttf
+sudo mkdir     /usr/share/fonts/TTF/
+sudo curl -o   /usr/share/fonts/TTF/Material-Design-Iconic-Font.ttf https://godalming123.github.io/blog/files/linux-setup/configs/Material-Design-Iconic-Font.ttf
 ```
 Now that we've installed the necersarry fonts for my polybar config lets set it up.
 First we need a launch file:
