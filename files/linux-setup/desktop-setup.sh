@@ -44,7 +44,6 @@ sudo curl -o   /usr/share/backgrounds/bspwm/detailed-mountain.jpg https://godalm
 sudo curl -o   /usr/share/backgrounds/bspwm/simple-mountain.jpg   https://godalming123.github.io/blog/files/linux-setup/configs/wallapapers/simple-mountain.jpg
 
 curl -o        ~/.bashrc                           https://godalming123.github.io/blog/files/linux-setup/configs/bashrc
-curl -o        ~/.welcome_screen                   https://godalming123.github.io/blog/files/linux-setup/configs/bash-welcome
 
 mkdir          ~/.config/alacritty/
 curl -o        ~/.config/alacritty/alacritty.yml   https://godalming123.github.io/blog/files/linux-setup/configs/alacritty.yml
