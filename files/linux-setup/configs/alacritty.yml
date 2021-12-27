@@ -1,5 +1,10 @@
-background_opacity: 0.6
+background_opacity: 0.7
 
 colors:
     primary:
         background: "#2f343f"
+
+cursor:
+    style: Beam
+
+live_config_reload: true
