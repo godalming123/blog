@@ -1,6 +1,6 @@
 #! /bin/sh
 
-echo "=======STARTING DESKTOP INSTALLATION AND SETUP V0.1.1 ... ======"
+echo "=======STARTING DESKTOP INSTALLATION AND SETUP V0.1.2 ... ======"
 echo ""
 echo "STARTING DESKTOP INSTALLATION..."
 
@@ -49,6 +49,7 @@ sudo curl -o   /usr/share/backgrounds/bspwm/simple-mountain.jpg   https://godalm
 curl -o        ~/.config/fish/config.fish          https://godalming123.github.io/blog/files/linux-setup/configs/config.fish
 
 sudo curl -o   /bin/ufetch-arch.sh                 https://godalming123.github.io/blog/files/linux-setup/configs/ufetch-arch.sh
+sudo chmod a+x /bin/ufetch-arch.sh
 
 mkdir          ~/.config/alacritty/
 curl -o        ~/.config/alacritty/alacritty.yml   https://godalming123.github.io/blog/files/linux-setup/configs/alacritty.yml

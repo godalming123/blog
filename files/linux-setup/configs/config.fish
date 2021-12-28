@@ -40,9 +40,9 @@ function fish_prompt
     else
         set success false
     end
-    
-    echo ""
 
+    echo ""
+    
     set_color green
     echo -n "╭┐"
     
@@ -77,15 +77,16 @@ function fish_prompt
     if git rev-parse --git-dir > /dev/null 2>&1 then # if this repo is a git repo
         git rev-parse --abbrev-ref HEAD
     else
-        echo "none"
+        echo -n "none"
     end
 
     set_color -o green
+    echo ┌────────────────
+
     echo "╰─> "
 end
 
 # text that appears when you first load fish
 function fish_greeting
     /bin/ufetch-arch.sh
-    echo  ──────────────────────────────────────────────────────
 end
