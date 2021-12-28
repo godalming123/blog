@@ -5,7 +5,7 @@ echo ""
 echo "STARTING DESKTOP INSTALLATION..."
 
 # pacman software
-sudo pacman -S dunst lightdm lightdm-gtk-greeter arc-gtk-theme xorg bspwm sxhkd polybar picom rofi flameshot
+sudo pacman -S dunst lightdm lightdm-gtk-greeter arc-gtk-theme xorg bspwm sxhkd polybar picom rofi flameshot fish
 
 echo "...FINISHED DESKTOP INSTALLATION"
 echo ""
@@ -29,6 +29,9 @@ echo "STARTING DESKTOP SETUP..."
 # /opt/coreutils/bin/ls
 # cd ../
 
+#change shell
+chsh -s /bin/fish $USER
+
 # add config folder
 mkdir ~/.config/
 
@@ -43,7 +46,9 @@ sudo curl -o   /usr/share/backgrounds/bspwm/windows.jpg           https://godalm
 sudo curl -o   /usr/share/backgrounds/bspwm/detailed-mountain.jpg https://godalming123.github.io/blog/files/linux-setup/configs/wallapapers/detailed-mountain.jpg
 sudo curl -o   /usr/share/backgrounds/bspwm/simple-mountain.jpg   https://godalming123.github.io/blog/files/linux-setup/configs/wallapapers/simple-mountain.jpg
 
-curl -o        ~/.bashrc                           https://godalming123.github.io/blog/files/linux-setup/configs/bashrc
+curl -o        ~/.config/fish/config.fish          https://godalming123.github.io/blog/files/linux-setup/configs/config.fish
+
+sudo curl -o   /bin/ufetch-arch.sh                 https://godalming123.github.io/blog/files/linux-setup/configs/ufetch-arch.sh
 
 mkdir          ~/.config/alacritty/
 curl -o        ~/.config/alacritty/alacritty.yml   https://godalming123.github.io/blog/files/linux-setup/configs/alacritty.yml
