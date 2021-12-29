@@ -1,6 +1,6 @@
 #! /bin/sh
 
-echo "=======STARTING DESKTOP INSTALLATION AND SETUP V0.1.2 ... ======"
+echo "=======STARTING DESKTOP INSTALLATION AND SETUP V0.1.3 ... ======"
 echo ""
 echo "STARTING DESKTOP INSTALLATION..."
 
@@ -42,9 +42,9 @@ sudo curl -o   /etc/lightdm/lightdm-gtk-greeter.conf           https://godalming
 
 sudo mkdir     /usr/share/backgrounds/
 sudo mkdir     /usr/share/backgrounds/bspwm/
-sudo curl -o   /usr/share/backgrounds/bspwm/windows.jpg           https://godalming123.github.io/blog/files/linux-setup/configs/wallapapers/windows.jpg
-sudo curl -o   /usr/share/backgrounds/bspwm/detailed-mountain.jpg https://godalming123.github.io/blog/files/linux-setup/configs/wallapapers/detailed-mountain.jpg
-sudo curl -o   /usr/share/backgrounds/bspwm/simple-mountain.jpg   https://godalming123.github.io/blog/files/linux-setup/configs/wallapapers/simple-mountain.jpg
+sudo curl -o   /usr/share/backgrounds/bspwm/windows.jpg           https://godalming123.github.io/blog/files/linux-setup/configs/wallpapers/windows.jpg
+sudo curl -o   /usr/share/backgrounds/bspwm/detailed-mountain.jpg https://godalming123.github.io/blog/files/linux-setup/configs/wallpapers/detailed-mountain.jpg
+sudo curl -o   /usr/share/backgrounds/bspwm/simple-mountain.jpg   https://godalming123.github.io/blog/files/linux-setup/configs/wallpapers/simple-mountain.jpg
 
 curl -o        ~/.config/fish/config.fish          https://godalming123.github.io/blog/files/linux-setup/configs/config.fish
 
