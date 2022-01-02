@@ -60,6 +60,7 @@ wm-restack = bspwm
 modules-left = workspaces pulseaudio wlan
 modules-center = title
 modules-right = memory time date cpu cpuMem
+tray-position = right
 
 ; fonts ===================================================
 font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=9;3
