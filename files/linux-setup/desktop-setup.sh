@@ -1,11 +1,11 @@
 #! /bin/sh
 
-echo "=======STARTING DESKTOP INSTALLATION AND SETUP V0.1.4 ... ======"
+echo "=======STARTING DESKTOP INSTALLATION AND SETUP V0.1.5 ... ======"
 echo ""
 echo "STARTING DESKTOP INSTALLATION..."
 
 # pacman software
-sudo pacman -S pipewire pipewire-alsa pipewire-jack pipewire-pulse dunst lightdm lightdm-gtk-greeter arc-gtk-theme xorg bspwm sxhkd polybar picom rofi flameshot fish
+sudo pacman -S blueberry volumeicon pipewire pipewire-alsa pipewire-jack pipewire-pulse dunst lightdm lightdm-gtk-greeter arc-gtk-theme xorg bspwm sxhkd polybar picom rofi flameshot fish
 
 echo "...FINISHED DESKTOP INSTALLATION"
 echo ""
