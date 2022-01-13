@@ -1,6 +1,6 @@
 #! /bin/sh
 
-echo "=======STARTING DESKTOP INSTALLATION AND SETUP V1.6.0 ... ======"
+echo "=======STARTING DESKTOP INSTALLATION AND SETUP V1.7.0 ... ======"
 echo ""
 echo "STARTING DESKTOP INSTALLATION..."
 
