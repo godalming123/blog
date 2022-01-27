@@ -3,7 +3,7 @@ layout: post
 author: Me - Godalming123
 authorUrl: https://godalming123.github.io/new-site
 title: Anti competitive?
-description: ""
+description: "In this yet to be written article discover the truth about if google is being anticompetitive and making its apps slow on firefox"
 barba-page-namespace: post
 uiTags: ["google",  "anti-competitive"]
 searchTags: ["google", "anti-competitive"]

@@ -3,7 +3,7 @@ layout: post
 author: Me - Godalming123
 authorUrl: https://godalming123.github.io/new-site
 title: Linux Adventure!
-description: ""
+description: "See my path from distro to distro de to de and program to program in the linux world"
 uiTags: ["linux"]
 searchTags: ["linux"]
 type: "potentilly coming soon"
