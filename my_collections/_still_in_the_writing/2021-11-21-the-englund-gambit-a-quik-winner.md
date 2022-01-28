@@ -3,7 +3,7 @@ layout: post
 author: Me - Godalming123
 authorUrl: https://godalming123.github.io/new-site
 title: The Englund Gambit - A Quik Winner
-description: ""
+description: "See how the Englund Gambit can quikly win when paired with a unknowing opponent"
 searchTags: ["chess", "opening", "openings", "gambit", "gambits"]
 uiTags: ["chess", "opening", "gambit"]
 type: "still in the writing"
