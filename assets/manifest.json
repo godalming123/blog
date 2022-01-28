@@ -17,9 +17,14 @@
       },
       {
         "src": "/blog/icons/blogger.svg",
+        "sizes": "144x144",
+        "type": "image/svg"
+      },
+      {
+        "src": "/blog/icons/blogger.svg",
         "sizes": "80x80",
         "type": "image/svg"
-      }
+      },
     ],
     "theme_color": "#{{ site.faded-accent-color }}",
     "background_color": "#{{ site.faded-accent-color }}",
