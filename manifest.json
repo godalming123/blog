@@ -1,0 +1,30 @@
+{
+    "lang": "en",
+    "dir": "ltr",
+    "name": "Linux Coding Chess Blog",
+    "short_name": "LCC Blog",
+    "description" : "",
+    "icons": [
+      {
+        "src": "/blog/icons/blogger.svg",
+        "sizes": "266x266",
+        "type": "image/svg"
+      },
+      {
+        "src": "/blog/icons/blogger.svg",
+        "sizes": "180x180",
+        "type": "image/svg"
+      }
+      {
+        "src": "/blog/icons/blogger.svg",
+        "sizes": "80x80",
+        "type": "image/svg"
+      }
+    ],
+    "theme_color": "#{{ site.faded-accent-color }}",
+    "background_color": "#{{ site.faded-accent-color }}",
+    "start_url": "/blog/",
+    "scope" : "/blog/",
+    "display": "standalone",
+    "orientation": "natural"
+  }
