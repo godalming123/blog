@@ -7,6 +7,11 @@
     "icons": [
       {
         "src": "/blog/icons/blogger.svg",
+        "sizes": "512x512",
+        "type": "image/svg"
+      },
+      {
+        "src": "/blog/icons/blogger.svg",
         "sizes": "266x266",
         "type": "image/svg"
       },
