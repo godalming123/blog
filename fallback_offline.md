@@ -9,5 +9,6 @@ barba-page-namespace: fallback-offline
 <div class="center-text"  style="margin-top: 400px">
     <h1>OOPS!</h1>
     <p>Currently you cannot veiw this page offline.</p>
-    <br><button class="btn waves-effect waves-light" onclick="window.history.go(-1)">Go Back</button>
+    <br>
+    <button class="btn waves-effect waves-light" onclick="window.history.go(-1)">Go Back</button>
 </div>
