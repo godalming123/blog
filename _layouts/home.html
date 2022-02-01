@@ -29,10 +29,6 @@ title: "My Blog"
       {% for document in collection.docs %}
         <!-- content item -->
         <div class="blog-post-card clickable-div card grey lighten-4 waves-effect">
-          <!-- url -->
-          {% if collection.output == true %}<!--if jekyll will generate a url for the blog-->
-            <a href="{{ document.url }}" class="clickable-div-link">text of my link</a>
-          {% endif %}
           <!-- image -->
           {% if document.front-image != "" %}
             <div class="card-image">
@@ -61,6 +57,10 @@ title: "My Blog"
               	<p>{{ document.description }}</p>
             {% endcase %}
           </div>
+          <!-- url -->
+          {% if collection.output == true %}<!--if jekyll will generate a url for the blog-->
+            <a href="{{ document.url }}" class="clickable-div-link">See the blog >></a>
+          {% endif %}
         </div>
       {% endfor %}
     </div>
