@@ -3,7 +3,7 @@ layout: post
 author: Me - Godalming123
 authorUrl: https://godalming123.github.io/new-site
 title: Upgrade Time
-description: ""
+description: "In this unwritten article see how to upgrade the ram on your HP laptop"
 uiTags: ["ram", "upgrade"]
 searchTags: ["ram", "upgrade"]
 type: "tuturiol"
