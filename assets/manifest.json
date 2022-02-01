@@ -7,18 +7,58 @@
     "name": "Linux Coding Chess Blog",
     "short_name": "LCC Blog",
     "description" : "",
-    "icons": {
-      "512": "icons/blogger.svg",
-      "266": "icons/blogger.svg",
-      "192": "icons/blogger.svg",
-      "180": "icons/blogger.svg",
-      "168": "icons/blogger.svg",
-      "144": "icons/blogger.svg",
-      "96": "icons/blogger.svg",
-      "80": "icons/blogger.svg",
-      "72": "icons/blogger.svg",
-      "48": "icons/blogger.svg"
-    },
+    "i  cons": [
+      {
+        "src": "icons/blogger.svg",
+        "sizes": "512x512",
+        "type": "image/svg"
+      },
+      {
+        "src": "icons/blogger.svg",
+        "sizes": "266x266",
+        "type": "image/svg"
+      },
+      {
+        "src": "icons/blogger.svg",
+        "sizes": "192x192",
+        "type": "image/svg"
+      },
+      {
+        "src": "icons/blogger.svg",
+        "sizes": "180x180",
+        "type": "image/svg"
+      },
+      {
+        "src": "icons/blogger.svg",
+        "sizes": "168x168",
+        "type": "image/svg"
+      },
+      {
+        "src": "icons/blogger.svg",
+        "sizes": "144x144",
+        "type": "image/svg"
+      },
+      {
+        "src": "icons/blogger.svg",
+        "sizes": "96x96",
+        "type": "image/svg"
+      },
+      {
+        "src": "icons/blogger.svg",
+        "sizes": "80x80",
+        "type": "image/svg"
+      },
+      {
+        "src": "icons/blogger.svg",
+        "sizes": "72x72",
+        "type": "image/svg"
+      },
+      {
+        "src": "icons/blogger.svg",  
+        "sizes": "48x48",
+        "type": "image/svg"
+      }
+    ],
     "theme_color": "#{{ site.faded-accent-color }}",
     "background_color": "#{{ site.faded-accent-color }}",
     "start_url": "/blog/",
