@@ -18,6 +18,9 @@
             {% if collection.icon != "" %}
               <img src="{{ collection.icon }}" alt="{{ collection.iconAlt }}" class="invert-on-dark">
             {% endif %}
+            {% if collection.matirialIcon != "" %}
+              <span alt="{{ collection.iconAlt }}" class="invert-on-dark material-icons">{{ collection.matirialIcon }}</span>
+            {% endif %}
             {{ collection.name }}
           </a>
         </li>

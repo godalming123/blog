@@ -15,6 +15,9 @@ title: "My Blog"
       {% if collection.icon != "" %}
         <img loading="lazy" src="{{ collection.icon }}" alt="{{ collection.iconAlt }}" class="invert-on-dark">
       {% endif %}
+      {% if collection.matirialIcon != "" %}
+        <span alt="{{ collection.iconAlt }}" class="invert-on-dark material-icons">{{ collection.matirialIcon }}</span>
+      {% endif %}
 
       {{ collection.name }}
     </h4>

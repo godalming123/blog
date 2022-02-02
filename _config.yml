@@ -8,22 +8,25 @@ collections:
     name: Potentially Coming Soon
     description: The latest things that could be in the pipeline
     icon: ""
+    matirialIcon: history_toggle_off
     isPostType: true
-    #iconAlt: a suitcase
+    iconAlt: A clock
   still_in_the_writing:
     output: false
     sort_by: date
     name: Still In The Writing
     description: See the future of this blog. but be warned; Its wacky!
     icon: ""
+    matirialIcon: drive_file_rename_outline
     isPostType: true
-    #iconAlt: a suitcase
+    iconAlt: A pencil that writing
   working_on:
     output: true
     sort_by: date
     name: What I'm Working On
     description: The latest things I'm working on
     icon: /icons/suitcase.svg
+    matirialIcon: ""
     isPostType: true
     iconAlt: a suitcase
   tuturiols:
@@ -32,14 +35,16 @@ collections:
     name: My Tuturiols
     description: Browse all of my tuturiols
     icon: ""
+    matirialIcon: book
     isPostType: true
-    #iconAlt: a tuturiol
+    iconAlt: a book
   blogs:
     output: true
     sort_by: date
     name: My Blogs
     description: The latest happening's
     icon: "/icons/blogger.svg"
+    matirialIcon: ""
     iconAlt: a capital B
     isPostType: true
 
