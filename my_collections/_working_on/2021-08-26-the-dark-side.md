@@ -3,7 +3,7 @@ layout: post
 author: Me - Godalming123
 authorUrl: https://godalming123.github.io/new-site
 title: The Dark Side
-description: ""
+description: "See how I added a dark theme into https://github.com/pages-themes/minimal and then used it in my site"
 uiTags: ["dark mode", "jekyll", "minimal theme", "cayman theme"]
 searchTags: ["dark", "jekyll", "minimal", "cayman", "theme", "mode"]
 type: "stuff i'm working on"
@@ -15,7 +15,7 @@ barba-page-namespace: post
 
 Wondering why this site is dark? Well its becuase I am forking the
 <a target="_blank" href="https://jekyllrb.com/docs/themes/">Jekyll Themes</a>
-<a target="_blank" href="https://github.com/pages-themes/cayman">Cayman</a> and
+<a target="_blank" href="https://github.com/pages-themes/cayman">Cayman</a> (the theme I used to use for https://godalming123.github.io) and
 <a target="_blank" href="https://github.com/pages-themes/minimal">Minimal</a>
 from github pages to add dark mode! These forks add an automatic dark theme that can be changed in the **config.yaml** by setting
 ```
