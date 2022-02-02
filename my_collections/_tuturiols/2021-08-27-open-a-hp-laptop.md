@@ -3,7 +3,7 @@ layout: post
 author: Me - Godalming123
 authorUrl: https://godalming123.github.io/new-site
 title: Open An Hp Laptop
-description: "In this unritten article see how to open most HP laptops"
+description: "In this unritten article see how to open most HP laptops."
 uiTags: ["open", "laptop"]
 searchTags: ["open", "laptop"]
 type: "tuturiol"
