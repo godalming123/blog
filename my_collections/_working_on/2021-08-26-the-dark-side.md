@@ -3,7 +3,7 @@ layout: post
 author: Me - Godalming123
 authorUrl: https://godalming123.github.io/new-site
 title: The Dark Side
-description: "See how I added a dark theme into https://github.com/pages-themes/minimal and then used it in my site"
+description: "See how I added a dark theme into https://github.com/pages-themes/minimal and then used it in my site."
 uiTags: ["dark mode", "jekyll", "minimal theme", "cayman theme"]
 searchTags: ["dark", "jekyll", "minimal", "cayman", "theme", "mode"]
 type: "stuff i'm working on"
