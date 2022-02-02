@@ -52,7 +52,7 @@ collections_dir: my_collections
 accent-color: 26a69a #hex color value
 faded-accent-color: 1d8c81 #hex color value this is used for background when app is launching
 
-sidebar-width: 300px;
+sidenav-width: 300px;
 
 #seo ==========================
 title: My Blog
