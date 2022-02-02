@@ -14,8 +14,8 @@ barba-page-namespace: post
 ## Screenshots
 These are some screenshots of my setup:
 
-![1st image of my setup](/blog/imgs/my-linux-setup/1.png)
-![2nd image of my setup](/blog/imgs/my-linux-setup/2.png)
+<img class="materialboxed" alt="1st image of my setup" src="/blog/imgs/my-linux-setup/1.png">
+<img class="materialboxed" alt="2nd image of my setup" src="/blog/imgs/my-linux-setup/2.png">
 
 ## Starting piont
 For this article I am assuming that you are starting with:
