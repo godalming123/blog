@@ -8,8 +8,8 @@ picom --experimental-backends &
 pgrep -x sxhkd > /dev/null || sxhkd &
 volumeicon &
 blueberry-tray &
-feh --bg-fill /usr/share/backgrounds/bspwm/windows.jpg &
-bash ~/.config/polybar/launch.sh &
+nitrogen --restore &
+~/.config/polybar/launch.sh &
 
 # =========================================================
 # options
@@ -22,8 +22,8 @@ bspc config border_width        2 &
 bspc config window_gap          10 &
 
 bspc config borderless_monocle true &
-bspc config single_monocle true &
-bspc config gapless_monocle false &
+bspc config single_monocle     true &
+bspc config gapless_monocle    false &
 
 bspc config focused_border_color "#008c77" &
 bspc config normal_border_color  "#2f343f" &

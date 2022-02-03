@@ -5,7 +5,7 @@ echo ""
 echo "STARTING DESKTOP INSTALLATION..."
 
 # pacman software
-sudo pacman -S blueberry volumeicon pipewire pipewire-alsa pipewire-jack pipewire-pulse dunst lightdm lightdm-gtk-greeter arc-gtk-theme xorg bspwm sxhkd polybar picom rofi flameshot fish
+sudo pacman -S blueberry volumeicon pipewire pipewire-alsa pipewire-jack pipewire-pulse dunst lightdm lightdm-gtk-greeter arc-gtk-theme xorg bspwm sxhkd polybar picom rofi flameshot fish nitrogen
 
 echo "...FINISHED DESKTOP INSTALLATION"
 echo ""
@@ -32,6 +32,13 @@ echo "STARTING DESKTOP SETUP..."
 #change shell
 chsh -s /bin/fish $USER
 
+# set hostname (the code does not work for some reason so comented out)
+# oldHostname=hostname
+# newHostname="LapyZapy"
+
+# sudo hostnamectl set-hostname "$newHostname"
+# sudo sed -i 's/$oldHostname/$newHostname/g' /etc/hosts
+
 # add config folder
 mkdir ~/.config/
 
@@ -45,6 +52,9 @@ sudo mkdir     /usr/share/backgrounds/bspwm/
 sudo curl -o   /usr/share/backgrounds/bspwm/windows.jpg           https://godalming123.github.io/blog/files/linux-setup/configs/wallpapers/windows.jpg
 sudo curl -o   /usr/share/backgrounds/bspwm/detailed-mountain.jpg https://godalming123.github.io/blog/files/linux-setup/configs/wallpapers/detailed-mountain.jpg
 sudo curl -o   /usr/share/backgrounds/bspwm/simple-mountain.jpg   https://godalming123.github.io/blog/files/linux-setup/configs/wallpapers/simple-mountain.jpg
+
+sudo mkdir     /usr/share/backgrounds/icons/
+sudo curl -o   /usr/share/backgrounds/icons/logo.png              https://godalming123.github.io/blog/files/linux-setup/configs/icon.png
 
 curl -o        ~/.config/fish/config.fish          https://godalming123.github.io/blog/files/linux-setup/configs/config.fish
 
