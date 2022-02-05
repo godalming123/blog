@@ -3,7 +3,7 @@ layout: default
 title: "My Blog"
 ---
 
-<h1 id="intro"><img loading="lazy" src="/icons/blogger.svg" class="invert-on-dark">My Blog</h1>
+<h1 id="intro"><img loading="lazy" src="{{ /icons/blogger.svg | relative_url }}" class="invert-on-dark">My Blog</h1>
 
 {{content}}
 
@@ -13,7 +13,7 @@ title: "My Blog"
     <!-- title -->
     <h4 id="{{ collection.label }}" >
       {% if collection.icon != "" %}
-        <img loading="lazy" src="{{ collection.icon }}" alt="{{ collection.iconAlt }}" class="invert-on-dark">
+        <img loading="lazy" src="{{ collection.icon | relative_url}}" alt="{{ collection.iconAlt }}" class="invert-on-dark">
       {% endif %}
       {% if collection.matirialIcon != "" %}
         <i alt="{{ collection.iconAlt }}" class="invert-on-dark material-icons">{{ collection.matirialIcon }}</i>
@@ -62,7 +62,7 @@ title: "My Blog"
           </div>
           <!-- url -->
           {% if collection.output == true %}<!--if jekyll will generate a url for the blog-->
-            <a href="{{ document.url }}" class="clickable-div-link">See the blog >></a>
+            <a href="{{ document.url | relative_url }}" class="clickable-div-link">See the blog >></a>
           {% endif %}
         </div>
       {% endfor %}

@@ -10,13 +10,13 @@
     </h3>
     <p>A website for me to post my tuturiols experiences and what I'm working on.</p>
     <!-- pages -->
-    <li><a href="/blog/#intro" class="waves-effect closeSidenavs"><i class="material-icons">drive_file_rename_outline</i>Intro</a></li>
+    <li><a href="{{/#intro | relative_url}}" class="waves-effect closeSidenavs"><i class="material-icons">drive_file_rename_outline</i>Intro</a></li>
     {% for collection in site.collections %}
       {% if collection.isPostType %}
         <li>
-          <a href="/blog/#{{ collection.label}}" class="waves-effect closeSidenavs">
+          <a href="/#{{ collection.label | relative_url}}" class="waves-effect closeSidenavs">
             {% if collection.icon != "" %}
-              <img src="{{ collection.icon }}" alt="{{ collection.iconAlt }}" class="invert-on-dark">
+              <img src="{{ collection.icon | relative_url}}" alt="{{ collection.iconAlt }}" class="invert-on-dark">
             {% endif %}
             {% if collection.matirialIcon != "" %}
               <i alt="{{ collection.iconAlt }}" class="invert-on-dark material-icons">{{ collection.matirialIcon }}</i>
