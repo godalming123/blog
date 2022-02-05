@@ -16,7 +16,7 @@ title: "My Blog"
         <img loading="lazy" src="{{ collection.icon | relative_url}}" alt="{{ collection.iconAlt }}" class="invert-on-dark">
       {% endif %}
       {% if collection.matirialIcon != "" %}
-        <i alt="{{ collection.iconAlt }}" class="invert-on-dark material-icons">{{ collection.matirialIcon }}</i>
+        <i alt="{{ collection.iconAlt }}" class="invert-on-dark material-icons inherit-font-size">{{ collection.matirialIcon }}</i>
       {% endif %}
 
       {{ collection.name }}
