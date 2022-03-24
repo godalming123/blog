@@ -7,7 +7,7 @@
     "name": "Linux Coding Chess Blog",
     "short_name": "LCC Blog",
     "description" : "",
-    "i  cons": [
+    "icons": [
       {
         "src": "icons/blogger.svg",
         "sizes": "512x512",
