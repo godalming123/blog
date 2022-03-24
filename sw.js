@@ -1,7 +1,7 @@
 ---
 ---
 
-const cacheName = "pwa-cache-v3";
+const cacheName = "pwa-cache-v4";
 
 const assets = [
   '{{ "/fallback_offline" | relative_url }}',
