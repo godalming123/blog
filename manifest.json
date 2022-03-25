@@ -54,7 +54,7 @@
         "type": "image/svg"
       },
       {
-        "src": "{{ "icons/blogger.svg",  | relative_url}}" 
+        "src": "{{ "icons/blogger.svg",  | relative_url}}",
         "sizes": "48x48",
         "type": "image/svg"
       }
