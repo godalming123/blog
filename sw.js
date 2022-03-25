@@ -40,7 +40,7 @@ const loadAndAddToCache = (request, cache) =>
   });
 
 const loadFromCache = (request, cache) =>
-  getFromCache(cache, request, loadAndAddToCache(event, cache))//return the reponse from the cache or the fetch page if it is not in the cache
+  getFromCache(cache, request, loadAndAddToCache(request, cache))//return the reponse from the cache or the fetch page if it is not in the cache
 
 const loadData = (request) =>
   caches.open(cacheName).then( (cache) => loadFromCache(request, cache) )
