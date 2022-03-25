@@ -8,6 +8,7 @@ uiTags: ["linux", "bspwm", "arch", "picom", "sxhkd", "polybar"]
 searchTags: ["linux", "bspwm", "arch", "picom", "sxhkd", "polybar"]
 type: "tuturiol"
 front-image: "/blog/imgs/my-linux-setup/1.png"
+front-image-alt: "A picture of my linux setup"
 barba-page-namespace: post
 ---
 

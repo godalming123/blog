@@ -3,7 +3,7 @@ layout: default
 title: "My Blog"
 ---
 
-<h1 id="intro"><img loading="lazy" src="{{ '/icons/blogger.svg' | relative_url }}" class="invert-on-dark">My Blog</h1>
+<h1 id="intro"><img loading="lazy" alt="A capital B" src="{{ '/icons/blogger.svg' | relative_url }}" class="invert-on-dark">My Blog</h1>
 
 {{content}}
 
@@ -46,7 +46,7 @@ title: "My Blog"
           <!-- image -->
           {% if document.front-image != "" %}
             <div class="card-image">
-              <img loading="lazy" src="{{ document.front-image }}">
+              <img loading="lazy" src="{{ document.front-image }}" alt="{{ document.front-image-alt }}">
             </div>
           {%endif%}
           <!-- text -->

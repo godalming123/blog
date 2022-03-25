@@ -61,8 +61,8 @@
     ],
     "theme_color": "#{{ site.faded-accent-color }}",
     "background_color": "#{{ site.faded-accent-color }}",
-    "start_url": "/blog/",
-    "scope" : "/blog/",
+    "start_url": "{{ "/" | relative_url}}",
+    "scope" : "{{ "/" | relative_url}}",
     "display": "standalone",
     "orientation": "natural"
   }
