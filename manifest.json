@@ -11,52 +11,62 @@
       {
         "src": "{{ "icons/blogger.svg" | relative_url}}",
         "sizes": "512x512",
-        "type": "image/svg"
+        "type": "image/svg",
+        "purpose": "any"
       },
       {
         "src": "{{ "icons/blogger.svg" | relative_url}}",
         "sizes": "266x266",
-        "type": "image/svg"
+        "type": "image/svg",
+        "purpose": "any"
       },
       {
         "src": "{{ "icons/blogger.svg" | relative_url}}",
         "sizes": "192x192",
-        "type": "image/svg"
+        "type": "image/svg",
+        "purpose": "any"
       },
       {
         "src": "{{ "icons/blogger.svg" | relative_url}}",
         "sizes": "180x180",
-        "type": "image/svg"
+        "type": "image/svg",
+        "purpose": "any"
       },
       {
         "src": "{{ "icons/blogger.svg" | relative_url}}",
         "sizes": "168x168",
-        "type": "image/svg"
+        "type": "image/svg",
+        "purpose": "any"
       },
       {
         "src": "{{ "icons/blogger.svg" | relative_url}}",
         "sizes": "144x144",
-        "type": "image/svg"
+        "type": "image/svg",
+        "purpose": "any"
       },
       {
         "src": "{{ "icons/blogger.svg" | relative_url}}",
         "sizes": "96x96",
-        "type": "image/svg"
+        "type": "image/svg",
+        "purpose": "any"
       },
       {
         "src": "{{ "icons/blogger.svg" | relative_url}}",
         "sizes": "80x80",
-        "type": "image/svg"
+        "type": "image/svg",
+        "purpose": "any"
       },
       {
         "src": "{{ "icons/blogger.svg" | relative_url}}",
         "sizes": "72x72",
-        "type": "image/svg"
+        "type": "image/svg",
+        "purpose": "any"
       },
       {
         "src": "{{ "icons/blogger.svg",  | relative_url}}",
         "sizes": "48x48",
-        "type": "image/svg"
+        "type": "image/svg",
+        "purpose": "any"
       }
     ],
     "theme_color": "#{{ site.faded-accent-color }}",
