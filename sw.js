@@ -15,7 +15,7 @@ const getFromCaches = (request, getFallback, getFallbackOnFailiure) =>
     else {//if the data is not in the cache
       return getFallback()
     }
-  }).catch((respone) => getfallbackOnFailiure())// catch with the fallback upon failure
+  }).catch((respone) => getFallbackOnFailiure())// catch with the fallback upon failure
 
 const loadAndAddToCache = (request) =>
   fetch(request).then((response) => {
