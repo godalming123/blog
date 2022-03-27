@@ -1,5 +1,5 @@
 # This is just a version so I can force github to re-get the theme and rebuild he page:
-version: 13
+version: 14
 remote_theme: "godalming123/matirlize-jekyll-theme"
 baseurl: "/blog"
 
