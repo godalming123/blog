@@ -19,8 +19,8 @@ const getFromCaches = (request, getFallback, getFallbackOnFailiure) =>
 
 const loadAndAddToCache = (request) =>
   fetch(request).then((response) => {
-    caches.open(cacheName).then( (cache) => cache.put(request, response.clone()));//add the response to the cache
-    return response;//return the response
+    caches.open(cacheName).then( (cache) => cache.put(request, response));//add the response to the cache
+    return response.clone();//return the response
   })
 
 const loadData = (request, isHtml) =>
@@ -30,7 +30,7 @@ const loadData = (request, isHtml) =>
     () => loadAndAddToCache(request),
     () => {
       if (isHtml) {
-        return getFromCaches('{{ "/fallback_offline" | relative_url }}', () => "the cached fallbck offline page was null", "getting the cached falback offline page failed")
+        return getFromCaches('{{ "/fallback_offline" | relative_url }}', () => "the cached fallbck offline page was null", () => "getting the cached falback offline page failed")
       }
       else {
         return ""
@@ -54,8 +54,8 @@ self.addEventListener('activate', evt => {
     caches.keys().then(keys => {
       return Promise.all(
         keys
-          .filter(key => key !== cacheName)
-          .map(key => caches.delete(key))
+          .filter(key => key !== cacheName)//filter keys
+          .map(key => caches.delete(key))//and delete them
       )
     })
   );
