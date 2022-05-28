@@ -26,13 +26,13 @@ And with a realworld example:
 
 ## How it works
 Give me your canny secrets! NOW! Okay, Okay. The way this works is by transistioning with `position: sticky;` so in the first example we set
-```
+```css
 position: sticky;
 top: 0;
 left: 0;
 ```
 And when the button is still on the screen and when the `active` class is added we smoothly transition the `left` and `top` property's to:
-```
+```css
 top: calc(100vh - 36px - 5px);
 left: calc(100vw - 210.617px - 5px);
 ```
@@ -44,7 +44,7 @@ Yes I know; its a bit janky - assuming the buttons width and height - but so is 
 Sadly this does have limitations and they are fairly large:
 ### 1. We assume that the item you are animating has a certain `width` and `height`.
 Sadly I do not see any way to aviod this but when the button moves over to the corner of the screen it ahs the following styles added to it:
-```
+```css
 top: calc(100vh - 36px - 5px);
 left: calc(100vw - 210.617px - 5px);
 ```
