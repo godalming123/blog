@@ -44,41 +44,41 @@ bash everything.sh
 
 ## Software
 ### Git
-```
+```bash
 sudo pacman -S git
 ```
 ### Yay or paru
 I use yay as an aur helper but am experimenting with paru and its what makes arch great anyway.
 #### Yay install
-```
+```bash
 git clone https://aur.archlinux.org/yay-git.git
 cd yay-git/
 makepkg -si
 ```
 Finally we must remove the yay-git directory
-```
+```bash
 cd ../
 rmdir yay-git/
 ```
 #### Paru install
-```
+```bash
 sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 ```
 And to remove the paru folders
-```
+```bash
 cd ../
 rmdir paru/
 ```
 ### Flameshot
-```
+```bash
 pacman -S flameshot
 ```
 ### Micro
 ### Installation
-```
+```bash
 pacman -S micro
 ```
 ### Configuration
@@ -89,19 +89,17 @@ set colorscheme cm16
 ### Termite or alacritty
 I use termite as my terminal emulater however have decided to update to alacritty.
 #### Termite
-```
+```bash
 yay -S termite
 ```
 #### Alacritty
 ##### Installation
-```
+```bash
 sudo pacman -S alacritty
 ```
 ##### Configuration
-```
-~/.config/alacritty/alacritty.yml
-```
-```
+`~/.config/alacritty/alacritty.yml`
+```yaml
 background_opacity: 0.9
 
 colors:
@@ -110,32 +108,32 @@ colors:
 ```
 ### Gnome-boxes
 Please dont judge me and hear me out; gnome boxes should be faster then virtualbox becuase it uses qemu which is built into the linux kernal and its got a better and cleaner interface respecting my arc gtk theme where virtualbox just looks ugly as well as automatically adapting my virtual machine size when I resize the window.
-```
+```bash
 sudo pacman -S gnome-boxes
 ```
 ### Nautilus
-```
+```bash
 sudo pacman -S nautilus
 ```
 ### Vscodium
-```
+```bash
 yay -S vscodium-bin
 ```
 ### Btop++
-```
+```bash
 yay -S btop
 ```
 ### Jekyll + ruby
-```
+```bash
 yay -S jekyll
 ```
 ### Firefox
-```
+```bash
 pacman -S firefox
 ```
 ### Github-desktop
 #### Installation
-```
+```bash
 yay -S github-desktop-bin
 ```
 #### Configuration
@@ -146,21 +144,21 @@ yay -S github-desktop-bin
 5. Then select github desktop to open the smart link. And your done!
 
 ### Teams
-```
+```bash
 yay -S teams
 ```
 ### Discord
-```
+```bash
 yay -S discord-development
 ```
 ### Neofetch
-```
+```bash
 sudo pacman -S neofetch
 ```
 
 ## Login manager
 I use `lightdm` for my login manager just run:
-```
+```bash
 sudo pacman -S lightdm lightdm-gtk-greeter
 sudo systemctl enable lightdm
 ```
@@ -168,7 +166,7 @@ Please note if you reboot into lightdm this will fail as there are no desktop en
 
 ## Theming
 ### Arc
-```
+```bash
 sudo pacman -S arc-gtk-theme
 ```
 
@@ -178,16 +176,14 @@ sudo pacman -S arc-gtk-theme
 I use bspwm + sxhkd + polybar + picom + rofi and dunst for my gui setup.
 ### Installation
 Just run
-```
+```bash
 sudo pacman -S xorg bspwm sxhkd polybar picom rofi dunst
 ```
 ### Configuration
 #### Bspwm
 My bspwm config is:
-```
-~/.config/bspwm/baspwmrc
-```
-```
+`~/.config/bspwm/baspwmrc`
+```bash
 #! /bin/sh
 
 # =========================================================
@@ -221,18 +217,14 @@ bspc rule -a Screenkey manage=off
 
 ```
 For this file to work we need to add `~/.screenlayout/workstation.sh` what this file does is sets up my laptop so the external moniter I have plugged in is set as a primary moniter and here is the file contents:
-```
-~/.screenlayout/workstation.sh
-```
-```
+`~/.screenlayout/workstation.sh`
+```bash
 #!/bin/sh
 xrandr --output eDP-1 --mode 1366x768 --pos 0x0 --rotate normal --output HDMI-1 --primary --mode 1920x1080 --pos 1366x0 --rotate normal
 ```
 #### Sxhkd
 Next we need to setup our sxhkd config I generally do not like have hotkeys directly linking to an app like `super` + `w` = `browser` instead I prefer to use rofi to do that the only binding I have to an app is `super` + `enter` = `terminal` - just because the number of times I'm following a guide and have to open the terminal is crazy. I also believe that keys should be bound to somethink that is easily useable. EG: `super` + `l` for left, `r` for right, `u` for up and `d` for down may be intuitive but hard to use as you have to do hand gymnastics to change window focus even if those keybindings are easy to learn. Instead I believe in keybindings being quik all my keybinds are centered around `super` + `wasd` this is my keybinding for changing window focus and `super` + `shift` + `wasd` would move windows and `super` + `q` would kill and `super` + `e` would open rofi and so on. This allows me to easily navigate my window manager from one hand while the other can be using the mouse or typing. Anyways this is my config:
-```
-~/.config/sxhkd/sxhkdrc
-```
+`~/.config/sxhkd/sxhkdrc`
 ```
 #1. Wm independent hotkeys
 	#1. terminal
@@ -401,10 +393,8 @@ super + {Left,Down,Up,Right}
 ```
 #### Picom
 Next we need to cofigure picom as you can already see from my `bspwmrc` I use picoms window fade feature so theres a nice animation when I open a window I also use rounded corners which can be set by the `round-corners` varieble.
-```
-~/.config/picom/picom.conf
-```
-```
+`~/.config/picom/picom.conf`
+```conf
 corner-radius = 8;
 rounded-corners-exclude = [
     "class_g = 'polybar'",
@@ -415,16 +405,14 @@ detect-rounded-corners = true;
 ```
 #### Polybar
 Next we need to configure polybar I use a fixed top bar and the matirial icons font. To install this font run:
-```
+```bash
 sudo mkdir     /usr/share/fonts/TTF/
 sudo curl -o   /usr/share/fonts/TTF/Material-Design-Iconic-Font.ttf https://godalming123.github.io/blog/files/linux-setup/configs/Material-Design-Iconic-Font.ttf
 ```
 Now that we've installed the necersarry fonts for my polybar config lets set it up.
 First we need a launch file:
-```
-~/.config/polybar/launch.sh
-```
-```
+`~/.config/polybar/launch.sh`
+```bash
 #!/usr/bin/env bash
 
 # Terminate already running bar instances
@@ -439,10 +427,8 @@ polybar main -r >>/tmp/polybar1.log 2>&1 & disown
 echo "Bars launched..."
 ```
 And then we need my config:
-```
-~/.config/polybar/config
-```
-```
+`~/.config/polybar/config`
+```ini
 ;==========================================================
 ;
 ;
@@ -616,10 +602,8 @@ label-empty=" "
 ```
 #### Rofi
 Finally after configurig polybar, we need to configure rofi:
-```
-~/.config/rofi/config.rasi
-```
-```
+`~/.config/rofi/config.rasi`
+```rasi
 configuration {
  modi: "window,drun,ssh,combi,run";
  theme: "solarized";
