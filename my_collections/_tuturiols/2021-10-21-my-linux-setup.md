@@ -28,9 +28,13 @@ For this article I am assuming that you are starting with:
 ## Distro
 Currently I use Endevour but I plan to install arch next time I install a distro I just tried endeavour to try arch witout the installation hastle. And I loved it ❤️️! I could find any packadge I wanted with yay and pacman, it was fluid and performant, it was customizable and vanialla and the list goes on. ...and on ...and on ...FOREVER.
 
+## UPDATE!
+
+I have created a (new dotfiles location)[https://https://github.com/godalming123/dotfiles] it contains all my old dotfiles in `0 - I don't use anymore` and a (script to setup my wayfire setup)[https://github.com/godalming123/dotfiles/blob/master/1-install/everything.sh] this is most likely to work but is not tested and will not work in VM's due to wayland issues it will overide some config directory's so it is recomeneded to install to a blank terminal system. The dotfiles in the code blocks still work but are outdated.
+
 ## Basic script for setup
 Just run these commands to setup bspwm with my taste
-```
+```bash
 mkdir Downloads/
 cd Downloads/
 curl -o setup-everything.sh https://godalming123.github.io/blog/files/linux-setup/everything.sh
